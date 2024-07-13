@@ -1,5 +1,8 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 // components
 import Social from "@/components/Social";
@@ -8,7 +11,12 @@ import Stats from "@/components/Stats";
 
 const Home = () => {
   return (
-    <section className="h-full">
+    <motion.div
+      initial={{ y: "-200vh" }}
+      animate={{ y: "0%" }}
+      transition={{ duration: 1 }}
+      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
+    >
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}
@@ -18,7 +26,8 @@ const Home = () => {
               Hello, I'm <br /> <span className="text-accent">Luis Solar</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              Welcome to my digital realm, where imagination meets creation.
+              Welcome to my digital realm, <br />
+              Where imagination meets creation!
               <br /> With a sharp sense for design and a dedicated command of
               coding, my portfolio illustrates my commitment to excellence.
             </p>
@@ -47,7 +56,7 @@ const Home = () => {
         </div>
         <Stats />
       </div>
-    </section>
+    </motion.div>
   );
 };
 
