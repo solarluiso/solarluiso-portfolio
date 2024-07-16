@@ -1,20 +1,21 @@
 "use client";
 
-import { motion } from "framer-motion";
 import React, { useState } from "react";
+import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 
-import { BsArrowUpRight, BsGithub } from "react-icons/bs";
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
+
+// components
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-
-import Link from "next/link";
-import Image from "next/image";
 
 import WorkSliderBtns from "@/components/WorkSliderBtns";
 

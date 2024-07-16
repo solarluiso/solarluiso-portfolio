@@ -1,10 +1,10 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 // components
+import { Button } from "@/components/ui/button";
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
