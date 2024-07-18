@@ -163,7 +163,7 @@ const About = () => {
       transition={{ duration: 1 }}
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
     >
-      <div className="container mx-auto">
+      <div className="container mx-auto h-[564px]">
         <Tabs
           defaultValue="experience"
           className="flex flex-col xl:flex-row gap-[60px]"
@@ -176,7 +176,7 @@ const About = () => {
           </TabsList>
 
           {/* content */}
-          <div className="min-h-[70vh] w-full">
+          <div className="w-full min-h-[25vh]">
             {/* experience */}
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">

@@ -28,6 +28,7 @@ const Photo = () => {
             quality={100}
             fill
             alt=""
+            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 500px"
             className="object-contain"
           />
         </motion.div>
