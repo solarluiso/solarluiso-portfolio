@@ -54,7 +54,6 @@ const SheetContent = React.forwardRef(
         ref={ref}
         className={cn(sheetVariants({ side }), className)}
         {...props}
-        aria-describedby="sheet-description"
       >
         {children}
         <SheetPrimitive.Close className="absolute right-8 top-8 transition-opacity outline-none">
@@ -106,7 +105,6 @@ const SheetDescription = React.forwardRef(({ className, ...props }, ref) => (
     ref={ref}
     className={cn("text-sm text-slate-500 dark:text-slate-400", className)}
     {...props}
-    id="sheet-description"
   />
 ));
 SheetDescription.displayName = SheetPrimitive.Description.displayName;

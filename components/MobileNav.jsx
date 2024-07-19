@@ -4,7 +4,13 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
 
-import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetTitle,
+  SheetDescription,
+  SheetTrigger,
+} from "./ui/sheet";
 
 const links = [
   {
@@ -33,6 +39,10 @@ const MobileNav = () => {
         <CiMenuFries className="text-[32px] text-accent" />
       </SheetTrigger>
       <SheetContent className="flex flex-col">
+        <SheetTitle className="sr-only">Mobile Navigation</SheetTitle>
+        <SheetDescription className="sr-only">
+          Navigate through the site using the links below.
+        </SheetDescription>
         {/* nav */}
         <nav className="flex flex-col justify-center items-center gap-8 m-auto">
           {links.map((link, index) => {
