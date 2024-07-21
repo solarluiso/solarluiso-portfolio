@@ -21,12 +21,45 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 
+// about data
+const about = {
+  title: "About me",
+  description:
+    "As a creative problem solver, I excel at turning ideas into efficient software solutions. With a collaborative spirit, I am dedicated to delivering impactful work and growing professionally.",
+  info: [
+    {
+      fieldName: "Name",
+      fieldValue: "Luis Solar",
+    },
+    {
+      fieldName: "Phone",
+      fieldValue: "(+1) 786 825 4670",
+    },
+    {
+      fieldName: "Experience",
+      fieldValue: "2+ Years",
+    },
+    {
+      fieldName: "Email",
+      fieldValue: "solarluiso@gmail.com",
+    },
+    {
+      fieldName: "Nationality",
+      fieldValue: "American",
+    },
+    {
+      fieldName: "Languages",
+      fieldValue: "English, Spanish",
+    },
+  ],
+};
+
 // experience data
 const experience = {
   icon: "/assets/about/badge.svg",
   title: "My experience",
   description:
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, sit.",
+    "Proven expertise in full stack development, delivering robust web applications from conception to deployment.",
   items: [
     {
       company: "Tech Solutions Inc.",
@@ -56,7 +89,7 @@ const education = {
   icon: "/assets/about/cap.svg",
   title: "My education",
   description:
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, sit.",
+    "Solid academic foundation in computer science, enhanced by specialized certifications.",
   items: [
     {
       institution: "Coursera",
@@ -85,7 +118,7 @@ const education = {
 const skills = {
   title: "My skills",
   description:
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, sit.",
+    "Adept in the React Ecosystem with proficiency in UI/UX collaboration using Figma.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -118,39 +151,6 @@ const skills = {
     {
       icon: <FaFigma />,
       name: "figma",
-    },
-  ],
-};
-
-// about data
-const about = {
-  title: "About me",
-  description:
-    "SOFTWARE DEVELOPER Specializing in React Ecosystem. Proficient in Figma, for UI/UX collaboration.",
-  info: [
-    {
-      fieldName: "Name",
-      fieldValue: "Luis Solar",
-    },
-    {
-      fieldName: "Phone",
-      fieldValue: "(+1) 786 825 4670",
-    },
-    {
-      fieldName: "Experience",
-      fieldValue: "2+ Years",
-    },
-    {
-      fieldName: "Email",
-      fieldValue: "solarluiso@gmail.com",
-    },
-    {
-      fieldName: "Nationality",
-      fieldValue: "American",
-    },
-    {
-      fieldName: "Languages",
-      fieldValue: "English, Spanish",
     },
   ],
 };
