@@ -39,9 +39,7 @@ const Contact = () => {
           {/* form */}
           <div className="xl:w-[54%] order-2 xl:order-none">
             <form className="flex flex-col gap-6 p-10 bg-secondary rounded-xl">
-              <h3 className="text-4xl text-accent">
-                Let's connect and collaborate!
-              </h3>
+              <h3 className="text-4xl text-accent">Let's connect!</h3>
               <p className="text-white/60">
                 Reach out to discuss opportunities, projects, or simply to start
                 a conversation. Fill out the form below to get in touch.
