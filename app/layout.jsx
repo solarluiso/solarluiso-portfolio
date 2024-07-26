@@ -12,9 +12,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "Luis Solar - Portfolio",
+  title: "Luis Solar - Developer Portfolio",
   description:
-    "Explore the portfolio of Luis Solar, a software developer showcasing his projects and expertise.",
+    "Explore the portfolio of Luis Solar, a web developer showcasing his projects and expertise.",
 };
 
 export default function RootLayout({ children }) {
