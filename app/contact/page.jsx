@@ -22,7 +22,7 @@ const info = [
   {
     icon: <FaMapMarkerAlt />,
     title: "Address",
-    description: "Miami, FL 33135",
+    description: "Washington, DC 20001",
   },
 ];
 
