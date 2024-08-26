@@ -62,9 +62,9 @@ const experience = {
     "Developing responsive and user-friendly web applications, with hands-on experience in frontend and backend technologies.",
   items: [
     {
-      position: "Implemented a portfolio website.",
-      duration: "2023",
-      description: "Personal Project",
+      position: "Contributed to an open-source project.",
+      duration: "2024",
+      description: "Grammerhub",
     },
     {
       position: "Developed a small business website.",
@@ -72,9 +72,9 @@ const experience = {
       description: "Freelance",
     },
     {
-      position: "Contributed to an open-source project.",
+      position: "Implemented a portfolio website.",
       duration: "2023",
-      description: "Grammerhub",
+      description: "Personal Project",
     },
     {
       position: "Built a full-stack web application.",
