@@ -25,7 +25,7 @@ import {
 const about = {
   title: "About me",
   description:
-    "As a creative problem solver, I excel at turning ideas into efficient software solutions. With a collaborative spirit, I am dedicated to delivering impactful work and growing professionally.",
+    "As a creative problem solver, I excel at turning ideas into efficient software solutions. Responsible for designing, building, and maintaining websites and web applications.",
   info: [
     {
       fieldName: "Name",
@@ -57,29 +57,29 @@ const about = {
 // experience data
 const experience = {
   icon: "/assets/about/badge.svg",
-  title: "My experience",
+  title: "My Experience",
   description:
-    "Proven expertise in full stack development, delivering robust web applications from conception to deployment.",
+    "Developing responsive and user-friendly web applications, with hands-on experience in frontend and backend technologies.",
   items: [
     {
-      company: "Tech Solutions Inc.",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
+      position: "Frontend Developer",
+      duration: "2023",
+      description: "Personal Project",
     },
     {
-      company: "Tech Solutions Inc.",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
+      position: "Web Developer",
+      duration: "2023",
+      description: "Freelance",
     },
     {
-      company: "Tech Solutions Inc.",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
+      position: "Contributor",
+      duration: "2023",
+      description: "Open Source Contribution",
     },
     {
-      company: "Tech Solutions Inc.",
       position: "Full Stack Developer",
-      duration: "2022 - Present",
+      duration: "2022",
+      description: "Bootcamp Project",
     },
   ],
 };
@@ -118,7 +118,7 @@ const education = {
 const skills = {
   title: "My skills",
   description:
-    "Adept in the React Ecosystem with proficiency in UI/UX collaboration using Figma.",
+    "Adept in the React Ecosystem with proficiency in Figma for UI/UX collaboration.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -199,7 +199,7 @@ const About = () => {
                           <div className="flex items-center gap-3">
                             {/* dot */}
                             <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p className="text-white/60">{item.company}</p>
+                            <p className="text-white/60">{item.description}</p>
                           </div>
                         </li>
                       );
