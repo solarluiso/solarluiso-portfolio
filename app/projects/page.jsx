@@ -23,24 +23,24 @@ const projects = [
   {
     num: "01",
     category: "frontend",
-    title: "project 1",
+    title: "Focus",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, consectetur.",
     stack: [{ name: "Html 5" }, { name: "CSS 3" }, { name: "Javascript" }],
     image: "/assets/projects/thumb1.png",
-    live: "",
-    github: "",
+    live: "https://focus-inky.vercel.app/",
+    github: "https://github.com/solarluiso/focus",
   },
   {
     num: "02",
     category: "fullstack",
-    title: "project 2",
+    title: "Fit physique",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, consectetur.",
     stack: [{ name: "Next.js" }, { name: "Tailwind CSS" }, { name: "Node.js" }],
     image: "/assets/projects/thumb2.png",
-    live: "",
-    github: "",
+    live: "https://fitphysique-pi.vercel.app/",
+    github: "https://github.com/solarluiso/fitphysique",
   },
   {
     num: "03",
@@ -103,7 +103,11 @@ const Projects = () => {
               {/* buttons */}
               <div className="flex items-center gap-4">
                 {/* live project button */}
-                <Link href={project.live}>
+                <Link
+                  href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -116,7 +120,11 @@ const Projects = () => {
                   </TooltipProvider>
                 </Link>
                 {/* github button */}
-                <Link href={project.github}>
+                <Link
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
