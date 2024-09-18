@@ -25,8 +25,12 @@ const projects = [
     category: "frontend",
     title: "Focus",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, consectetur.",
-    stack: [{ name: "Html 5" }, { name: "CSS 3" }, { name: "Javascript" }],
+      "A sleek web application designed to enhance productivity and focus.",
+    stack: [
+      { name: "Next.js" },
+      { name: "Tailwind CSS" },
+      { name: "Framer-Motion" },
+    ],
     image: "/assets/projects/thumb1.png",
     live: "https://focus-inky.vercel.app/",
     github: "https://github.com/solarluiso/focus",
@@ -35,8 +39,7 @@ const projects = [
     num: "02",
     category: "fullstack",
     title: "Fit physique",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, consectetur.",
+    description: "A fitness-focused platform to track workouts and progress.",
     stack: [{ name: "Next.js" }, { name: "Tailwind CSS" }, { name: "Node.js" }],
     image: "/assets/projects/thumb2.png",
     live: "https://fitphysique-pi.vercel.app/",
@@ -45,13 +48,13 @@ const projects = [
   {
     num: "03",
     category: "frontend",
-    title: "project 3",
+    title: "Modern bank app",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, consectetur.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind CSS" }],
+      "An innovative banking application with a modern user interface.",
+    stack: [{ name: "React" }, { name: "Tailwind CSS" }, { name: "Vite" }],
     image: "/assets/projects/thumb3.png",
-    live: "",
-    github: "",
+    live: "https://modern-bank-app-ebon-omega.vercel.app/",
+    github: "https://github.com/solarluiso/modern-bank-app",
   },
 ];
 
@@ -158,6 +161,7 @@ const Projects = () => {
                           src={project.image}
                           alt={project.title}
                           fill
+                          sizes=""
                           className="object-cover"
                         />
                       </div>
