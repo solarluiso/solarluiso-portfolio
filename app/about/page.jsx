@@ -25,31 +25,72 @@ import {
 const about = {
   title: "About me",
   description:
-    "As a creative problem solver, I excel at turning ideas into efficient software solutions. Responsible for designing, building, and maintaining websites and web applications.",
+    "As a creative problem solver, I excel at turning ideas into efficient software solutions. I am responsible for designing, building, and maintaining websites and web applications.",
   info: [
     {
-      fieldName: "Name",
+      fieldName: "Name:",
       fieldValue: "Luis Solar",
     },
     {
-      fieldName: "Phone",
+      fieldName: "Phone:",
       fieldValue: "(+1) 786 825 4670",
     },
     {
-      fieldName: "Experience",
+      fieldName: "Experience:",
       fieldValue: "2+ Years",
     },
     {
-      fieldName: "Email",
+      fieldName: "Email:",
       fieldValue: "solarluiso@gmail.com",
     },
     {
-      fieldName: "Nationality",
+      fieldName: "Nationality:",
       fieldValue: "American",
     },
     {
-      fieldName: "Languages",
+      fieldName: "Languages:",
       fieldValue: "English, Spanish",
+    },
+  ],
+};
+
+// skills data
+const skills = {
+  title: "My skills",
+  description:
+    "Adept in the React Ecosystem with proficiency in Figma for UI/UX collaboration. I enjoy building with modern tools to create fast, responsive, and visually engaging web experiences.",
+  skillList: [
+    {
+      icon: <FaHtml5 />,
+      name: "html 5",
+    },
+    {
+      icon: <FaCss3 />,
+      name: "css 3",
+    },
+    {
+      icon: <FaJs />,
+      name: "javascript",
+    },
+    {
+      icon: <FaReact />,
+      name: "react.js",
+    },
+    {
+      icon: <SiNextdotjs />,
+      name: "next.js",
+    },
+    {
+      icon: <SiTailwindcss />,
+      name: "tailwind.css",
+    },
+    {
+      icon: <FaNodeJs />,
+      name: "node.js",
+    },
+    {
+      icon: <FaFigma />,
+      name: "figma",
     },
   ],
 };
@@ -114,47 +155,6 @@ const education = {
   ],
 };
 
-// skills data
-const skills = {
-  title: "My skills",
-  description:
-    "Adept in the React Ecosystem with proficiency in Figma for UI/UX collaboration.",
-  skillList: [
-    {
-      icon: <FaHtml5 />,
-      name: "html 5",
-    },
-    {
-      icon: <FaCss3 />,
-      name: "css 3",
-    },
-    {
-      icon: <FaJs />,
-      name: "javascript",
-    },
-    {
-      icon: <FaReact />,
-      name: "react.js",
-    },
-    {
-      icon: <SiNextdotjs />,
-      name: "next.js",
-    },
-    {
-      icon: <SiTailwindcss />,
-      name: "tailwind.css",
-    },
-    {
-      icon: <FaNodeJs />,
-      name: "node.js",
-    },
-    {
-      icon: <FaFigma />,
-      name: "figma",
-    },
-  ],
-};
-
 const About = () => {
   return (
     <motion.div
@@ -177,6 +177,59 @@ const About = () => {
 
           {/* content */}
           <div className="w-full min-h-[25vh]">
+            {/* about */}
+            <TabsContent value="about" className="w-full">
+              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                <h3 className="text-4xl font-bold">{about.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  {about.description}
+                </p>
+                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
+                  {about.info.map((item, index) => {
+                    return (
+                      <li
+                        key={index}
+                        className="flex items-center justify-center xl:justify-start gap-4"
+                      >
+                        <span className="text-accent">{item.fieldName}</span>
+                        <span className="text-xl">{item.fieldValue}</span>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            </TabsContent>
+
+            {/* skills */}
+            <TabsContent value="skills" className="w-full h-full">
+              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                <h3 className="text-4xl font-bold">{skills.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  {skills.description}
+                </p>
+                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                  {skills.skillList.map((skill, index) => {
+                    return (
+                      <li key={index}>
+                        <TooltipProvider delayDuration={100}>
+                          <Tooltip>
+                            <TooltipTrigger className="w-full h-[150px] bg-secondary rounded-xl flex justify-center items-center group">
+                              <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                                {skill.icon}
+                              </div>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                              <p className="capitalize">{skill.name}</p>
+                            </TooltipContent>
+                          </Tooltip>
+                        </TooltipProvider>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            </TabsContent>
+
             {/* experience */}
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
@@ -238,59 +291,6 @@ const About = () => {
                     })}
                   </ul>
                 </ScrollArea>
-              </div>
-            </TabsContent>
-
-            {/* skills */}
-            <TabsContent value="skills" className="w-full h-full">
-              <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{skills.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-                  {skills.description}
-                </p>
-                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
-                  {skills.skillList.map((skill, index) => {
-                    return (
-                      <li key={index}>
-                        <TooltipProvider delayDuration={100}>
-                          <Tooltip>
-                            <TooltipTrigger className="w-full h-[150px] bg-secondary rounded-xl flex justify-center items-center group">
-                              <div className="text-6xl group-hover:text-accent transition-all duration-300">
-                                {skill.icon}
-                              </div>
-                            </TooltipTrigger>
-                            <TooltipContent>
-                              <p className="capitalize">{skill.name}</p>
-                            </TooltipContent>
-                          </Tooltip>
-                        </TooltipProvider>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div>
-            </TabsContent>
-
-            {/* about */}
-            <TabsContent value="about" className="w-full">
-              <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-                  {about.description}
-                </p>
-                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
-                  {about.info.map((item, index) => {
-                    return (
-                      <li
-                        key={index}
-                        className="flex items-center justify-center xl:justify-start gap-4"
-                      >
-                        <span className="text-white/60">{item.fieldName}</span>
-                        <span className="text-xl">{item.fieldValue}</span>
-                      </li>
-                    );
-                  })}
-                </ul>
               </div>
             </TabsContent>
           </div>

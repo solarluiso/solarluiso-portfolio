@@ -4,9 +4,9 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 // components
-import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/components/ui/button";
 
 const info = [
   {
@@ -48,9 +48,8 @@ const Contact = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <Input type="firstname" placeholder="Firstname" />
                 <Input type="lastname" placeholder="Lastname" />
-                <Input type="email" placeholder="Email address" />
-                <Input type="phone" placeholder="Phone number" />
               </div>
+              <Input type="email" placeholder="Email address" />
               {/* textarea */}
               <Textarea
                 className="h-[200px]"

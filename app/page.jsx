@@ -28,8 +28,9 @@ const Home = () => {
             <p className="max-w-[500px] mb-9 text-white/80">
               Welcome to my digital realm, <br />
               Where imagination meets creation!
-              <br /> With a sharp sense for design and a dedicated command of
-              coding, my portfolio illustrates my commitment to excellence.
+              <br />
+              This portfolio illustrates my dedication to crafting thoughtful
+              and effective digital experiences.
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
