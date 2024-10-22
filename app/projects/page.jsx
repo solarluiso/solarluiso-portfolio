@@ -76,15 +76,15 @@ const Projects = () => {
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
     >
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row xl:gap-[30px]">
-          <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
+        <div className="flex flex-col xl:flex-row justify-between px-16">
+          <div className="w-full xl:w-[40%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
             <div className="flex flex-col gap-[30px] h-[50%]">
               {/* outline num */}
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
                 {project.num}
               </div>
               {/* project category */}
-              <h2 className="text-[42px] font-bold leading-none transition-all duration-500 capitalize">
+              <h2 className="text-4xl font-bold leading-none transition-all duration-500 capitalize">
                 {project.category} project
               </h2>
               {/* project description */}

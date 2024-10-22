@@ -18,19 +18,19 @@ const Home = () => {
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
     >
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
+        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24 xl:px-16">
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Web Developer</span>
-            <h1 className="h1 mb-6">
+            <span className="h3 text-white/60">Web Developer</span>
+            <h1 className="h1 mb-4">
               Hello, <br /> I'm <span className="text-accent">Luiso</span>
             </h1>
-            <p className="max-w-[500px] mb-9 text-white/80">
-              Welcome to my digital realm, <br />
-              Where imagination meets creation!
-              <br />
-              This portfolio illustrates my dedication to crafting thoughtful
-              and effective digital experiences.
+            <p className="max-w-[420px] mb-9 h3 text-white/60">
+              I build thoughtful and effective web solutions while sipping
+              coffee on a glorious day!
+            </p>
+            <p className="max-w-[420px] mb-9 text-3xl xl:text-4xl font-bold">
+              Let's create something remarkable together!
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">

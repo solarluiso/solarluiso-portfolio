@@ -25,7 +25,7 @@ import {
 const about = {
   title: "About me",
   description:
-    "As a creative problem solver, I excel at turning ideas into efficient software solutions. I am responsible for designing, building, and maintaining websites and web applications.",
+    "As a creative problem solver, I excel at turning ideas into efficient software solutions. I am responsible for building and maintaining websites and web applications.",
   info: [
     {
       fieldName: "Name:",
@@ -58,7 +58,7 @@ const about = {
 const skills = {
   title: "My skills",
   description:
-    "Adept in the React Ecosystem with proficiency in Figma for UI/UX collaboration. I enjoy building with modern tools to create fast, responsive, and visually engaging web experiences.",
+    "Adept in the React Ecosystem, I enjoy building with modern tools to create fast, responsive, and visually engaging web experiences.",
   skillList: [
     {
       icon: <FaHtml5 />,
