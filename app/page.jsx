@@ -20,16 +20,16 @@ const Home = () => {
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24 xl:px-16">
           {/* text */}
-          <div className="text-center xl:text-left order-2 xl:order-none w-auto max-w-[490px] xl:max-w-[500px]">
-            <span className="h3 text-white/60">Web Developer</span>
-            <h1 className="h1 mb-4">
+          <div className="text-center xl:text-left order-2 xl:order-none w-auto max-w-[490px] xl:max-w-[490px]">
+            <span className="h3 text-white/60 uppercase">Web Developer</span>
+            <h1 className="h1 mb-4 uppercase">
               Hello, <br /> I'm <span className="text-accent">Luiso</span>
             </h1>
             <p className="mb-9 text-white/60">
               I build thoughtful and effective web solutions while sipping
               coffee on a glorious day!
             </p>
-            <p className="mb-9 text-3xl xl:text-4xl font-bold">
+            <p className="mb-9 text-3xl font-bold">
               Let's create something remarkable together!
             </p>
             {/* btn and socials */}

@@ -58,7 +58,7 @@ const about = {
 const skills = {
   title: "My skills",
   description:
-    "Adept in the React Ecosystem, I enjoy building with modern tools to create fast, responsive, and visually engaging web experiences.",
+    "Adept in the React Ecosystem, I enjoy working with modern tools to create fast, responsive, and visually engaging web experiences.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -100,7 +100,7 @@ const experience = {
   icon: "/assets/about/badge.svg",
   title: "My experience",
   description:
-    "Developing responsive and user-friendly web applications, with hands-on experience in frontend and backend technologies.",
+    "Proficient in frontend and backend technologies, collaborating with teams through effective communication and shared expertise.",
   items: [
     {
       position: "Contributed to an open-source project.",

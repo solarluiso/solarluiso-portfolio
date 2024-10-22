@@ -37,7 +37,7 @@ const Contact = () => {
       <div className="container mx-auto">
         <div className="flex flex-col justify-center items-center gap-6 pb-[30px] xl:mb-8">
           <h3 className="text-4xl font-bold text-center">Let's connect!</h3>
-          <p className="text-white/60 max-w-[560px] mx-auto text-center">
+          <p className="text-white/60 max-w-[600px] mx-auto text-center">
             Reach out to discuss opportunities, projects, or simply to start a
             conversation. Fill out the form below to get in touch.
           </p>
