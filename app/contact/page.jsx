@@ -44,7 +44,7 @@ const Contact = () => {
         </div>
         <div className="flex flex-col xl:flex-row items-center gap-[30px]">
           {/* form */}
-          <div className="w-full max-w-xl">
+          <div className="order-2 xl:order-none w-full max-w-xl">
             <form className="flex flex-col gap-6 p-10 bg-secondary rounded-xl">
               {/* input */}
               <Input type="name" placeholder="Your name" />
