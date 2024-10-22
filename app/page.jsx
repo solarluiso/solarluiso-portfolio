@@ -20,7 +20,7 @@ const Home = () => {
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24 xl:px-16">
           {/* text */}
-          <div className="text-center xl:text-left order-2 xl:order-none max-w-[360px] xl:max-w-[400px]">
+          <div className="text-center xl:text-left order-2 xl:order-none max-w-[360px] xl:max-w-[40%]">
             <span className="h3 text-white/60">Web Developer</span>
             <h1 className="h1 mb-4">
               Hello, <br /> I'm <span className="text-accent">Luiso</span>
