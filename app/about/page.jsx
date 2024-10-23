@@ -182,7 +182,7 @@ const About = () => {
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <div className="flex flex-col gap-4">
                   <h2 className="h2">{about.title}</h2>
-                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  <p className="p max-w-[600px] mx-auto xl:mx-0">
                     {about.description}
                   </p>
                 </div>
@@ -191,10 +191,10 @@ const About = () => {
                     return (
                       <li
                         key={index}
-                        className="flex items-center justify-center xl:justify-start gap-4"
+                        className="flex items-center justify-start gap-4"
                       >
                         <span className="text-accent">{item.fieldName}</span>
-                        <span className="text-xl">{item.fieldValue}</span>
+                        <span className="p text-xl">{item.fieldValue}</span>
                       </li>
                     );
                   })}
@@ -207,7 +207,7 @@ const About = () => {
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <div className="flex flex-col gap-4">
                   <h2 className="h2">{skills.title}</h2>
-                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  <p className="p max-w-[600px] mx-auto xl:mx-0">
                     {skills.description}
                   </p>
                 </div>
@@ -239,7 +239,7 @@ const About = () => {
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <div className="flex flex-col gap-4">
                   <h2 className="h2">{experience.title}</h2>
-                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  <p className="p max-w-[600px] mx-auto xl:mx-0">
                     {experience.description}
                   </p>
                 </div>
@@ -273,7 +273,7 @@ const About = () => {
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <div className="flex flex-col gap-4">
                   <h2 className="h2">{education.title}</h2>
-                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  <p className="p max-w-[600px] mx-auto xl:mx-0">
                     {education.description}
                   </p>
                 </div>

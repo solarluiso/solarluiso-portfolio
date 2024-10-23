@@ -19,6 +19,9 @@
   .h3 {
     @apply text-[20px] xl:text-[24px] leading-[1.1] font-extrabold uppercase;
   }
+  .p {
+    @apply font-secondary text-base text-lg text-white/60;
+  }
   .text-outline {
     -webkit-text-stroke: 1px #ffffff;
   }

@@ -27,7 +27,7 @@ const Home = () => {
               <h1 className="h1">
                 Hello, <br /> I'm <span className="text-accent">Luiso</span>
               </h1>
-              <p className="text-white/60">
+              <p className="p max-w-[390px]">
                 I build thoughtful and effective web solutions while sipping
                 coffee on a glorious day!
               </p>

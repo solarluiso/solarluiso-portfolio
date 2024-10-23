@@ -87,7 +87,7 @@ const Projects = () => {
                 {/* project category */}
                 <h3 className="h3">{project.category} project</h3>
                 {/* project description */}
-                <p className="text-white/60">{project.description}</p>
+                <p className="p">{project.description}</p>
                 {/* stack */}
                 <ul className="flex gap-4">
                   {project.stack.map((item, index) => {
