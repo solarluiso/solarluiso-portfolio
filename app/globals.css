@@ -11,13 +11,13 @@
     @apply font-primary bg-primary text-white leading-loose;
   }
   .h1 {
-    @apply text-[48px] xl:text-[70px] leading-[1.1] font-extrabold;
+    @apply text-[40px] xl:text-[60px] leading-[1.1] font-extrabold uppercase;
   }
   .h2 {
-    @apply text-[36px] xl:text-[48px] leading-[1.1] font-extrabold;
+    @apply text-[32px] xl:text-[36px] leading-[1.1] font-extrabold uppercase;
   }
   .h3 {
-    @apply text-[20px] xl:text-[24px] leading-[1.1] font-extrabold;
+    @apply text-[20px] xl:text-[24px] leading-[1.1] font-extrabold uppercase;
   }
   .text-outline {
     -webkit-text-stroke: 1px #ffffff;

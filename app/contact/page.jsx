@@ -35,16 +35,35 @@ const Contact = () => {
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
     >
       <div className="container mx-auto">
-        <div className="flex flex-col justify-center items-center gap-6 pb-[30px] xl:mb-8">
-          <h3 className="text-4xl font-bold text-center">Let's connect!</h3>
+        {/* message */}
+        <div className="flex flex-col justify-center items-center gap-4 pb-[30px] xl:mb-8">
+          <h3 className="h3 text-center">Let's connect!</h3>
           <p className="text-white/60 max-w-[600px] mx-auto text-center">
             Reach out to discuss opportunities, projects, or simply to start a
             conversation. Fill out the form below to get in touch.
           </p>
         </div>
         <div className="flex flex-col xl:flex-row items-center gap-[30px]">
+          {/* info */}
+          <div className="w-full max-w-xl p-[100px] flex items-center justify-center rounded-xl xl:mb-0 border border-accent/10 border-dashed">
+            <ul className="flex flex-col gap-10">
+              {info.map((item, index) => {
+                return (
+                  <li key={index} className="flex items-center gap-6">
+                    <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-secondary text-accent rounded-md flex items-center justify-center">
+                      <div className="text-[28px]">{item.icon}</div>
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-white/60 uppercase ">{item.title}</p>
+                      <h3 className="text-lg xl:text-xl">{item.description}</h3>
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
           {/* form */}
-          <div className="order-2 xl:order-none w-full max-w-xl">
+          <div className="w-full max-w-xl">
             <form className="flex flex-col gap-6 p-10 bg-secondary rounded-xl">
               {/* input */}
               <Input type="name" placeholder="Your name" />
@@ -59,24 +78,6 @@ const Contact = () => {
                 Send email
               </Button>
             </form>
-          </div>
-          {/* info */}
-          <div className="flex-1 flex items-center justify-center my-8 xl:mb-0">
-            <ul className="flex flex-col gap-10">
-              {info.map((item, index) => {
-                return (
-                  <li key={index} className="flex items-center gap-6">
-                    <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-secondary text-accent rounded-md flex items-center justify-center">
-                      <div className="text-[28px]">{item.icon}</div>
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-white/60">{item.title}</p>
-                      <h3 className="text-lg xl:text-xl">{item.description}</h3>
-                    </div>
-                  </li>
-                );
-              })}
-            </ul>
           </div>
         </div>
       </div>

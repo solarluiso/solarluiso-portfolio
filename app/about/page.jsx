@@ -180,10 +180,12 @@ const About = () => {
             {/* about */}
             <TabsContent value="about" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-                  {about.description}
-                </p>
+                <div className="flex flex-col gap-4">
+                  <h2 className="h2">{about.title}</h2>
+                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                    {about.description}
+                  </p>
+                </div>
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 mx-auto xl:mx-0">
                   {about.info.map((item, index) => {
                     return (
@@ -203,10 +205,12 @@ const About = () => {
             {/* skills */}
             <TabsContent value="skills" className="w-full h-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{skills.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-                  {skills.description}
-                </p>
+                <div className="flex flex-col gap-4">
+                  <h2 className="h2">{skills.title}</h2>
+                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                    {skills.description}
+                  </p>
+                </div>
                 <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
                   {skills.skillList.map((skill, index) => {
                     return (
@@ -233,10 +237,12 @@ const About = () => {
             {/* experience */}
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{experience.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-                  {experience.description}
-                </p>
+                <div className="flex flex-col gap-4">
+                  <h2 className="h2">{experience.title}</h2>
+                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                    {experience.description}
+                  </p>
+                </div>
                 <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {experience.items.map((item, index) => {
@@ -265,10 +271,12 @@ const About = () => {
             {/* education */}
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{education.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-                  {education.description}
-                </p>
+                <div className="flex flex-col gap-4">
+                  <h2 className="h2">{education.title}</h2>
+                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                    {education.description}
+                  </p>
+                </div>
                 <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {education.items.map((item, index) => {

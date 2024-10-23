@@ -25,7 +25,7 @@ const links = [
 const Nav = () => {
   const pathname = usePathname();
   return (
-    <nav className="flex gap-8">
+    <nav className="flex gap-8 uppercase">
       {links.map((link, index) => {
         return (
           <Link
