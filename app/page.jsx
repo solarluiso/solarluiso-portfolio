@@ -18,7 +18,7 @@ const Home = () => {
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
     >
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24 xl:px-16">
+        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-16 xl:pb-28 xl:px-16">
           {/* text */}
           <div className="flex flex-col gap-6 order-2 xl:order-none w-auto max-w-[490px] xl:max-w-[490px] text-center xl:text-left">
             <div className="flex flex-col gap-4">
