@@ -87,12 +87,15 @@ const Projects = () => {
                 {/* project category */}
                 <h3 className="h3">{project.category} project</h3>
                 {/* project description */}
-                <p className="p">{project.description}</p>
+                <p className="p text-xl">{project.description}</p>
                 {/* stack */}
                 <ul className="flex gap-4">
                   {project.stack.map((item, index) => {
                     return (
-                      <li key={index} className="text-lg text-accent">
+                      <li
+                        key={index}
+                        className="text-md xl:text-lg text-accent"
+                      >
                         {item.name}
                         {/* remove the last comma */}
                         {index !== project.stack.length - 1 && ","}
