@@ -21,17 +21,22 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-16 xl:pb-28 xl:px-16">
           {/* text */}
           <div className="flex flex-col gap-6 order-2 xl:order-none w-auto max-w-[490px] xl:max-w-[490px] text-center xl:text-left">
+            {/* hello */}
+            <h1 className="h1 flex flex-col">
+              <span className="">Hello!</span>
+              <span>
+                I'm <span className="text-accent">Luiso</span>
+              </span>
+            </h1>
+            {/* bio */}
             <div className="flex flex-col gap-4">
-              {" "}
               <h3 className="h3 text-white/60">Web Developer</h3>
-              <h1 className="h1">
-                Hello, <br /> I'm <span className="text-accent">Luiso</span>
-              </h1>
               <p className="p max-w-[400px] text-xl">
                 I build thoughtful and effective web solutions while sipping
-                coffee on a glorious day!
+                coffee on a glorious day.
               </p>
             </div>
+            {/* take action */}
             <h3 className="h3">
               Let's create something <br />
               remarkable together!
