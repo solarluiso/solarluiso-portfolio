@@ -73,12 +73,13 @@ const Projects = () => {
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
-      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
+      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0 xl:items-start"
     >
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row justify-between xl:px-16">
-          <div className="w-full xl:w-[45%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
-            <div className="flex flex-col gap-[30px] h-[50%]">
+        <div className="flex flex-col xl:flex-row items-center xl:items-start justify-between xl:p-20 gap-[60px]">
+          {/* text */}
+          <div className="w-full max-w-[536px] xl:w-[400px] flex flex-col xl:justify-between order-2 xl:order-none">
+            <div className="flex flex-col gap-[30px]">
               {/* outline num */}
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
                 {project.num}
@@ -146,17 +147,18 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="w-full xl:w-[50%]">
+          {/* photo */}
+          <div className="w-full max-w-[536px]">
             <Swiper
               spaceBetween={30}
               slidesPerView={1}
-              className="xl:h-[520px] mb-12"
+              className="xl:h-[402px]"
               onSlideChange={handleSlideChange}
             >
               {projects.map((project, index) => {
                 return (
                   <SwiperSlide key={index} className="w-full">
-                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                    <div className="h-[302px] relative group flex justify-center items-center bg-pink-50/20">
                       {/* overlay */}
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       {/* image */}
