@@ -2,6 +2,7 @@
 
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { fadeIn } from "@/lib/variants";
 
 // components
 import { Input } from "@/components/ui/input";
@@ -36,12 +37,26 @@ const Contact = () => {
     >
       <div className="container mx-auto">
         {/* message */}
-        <div className="flex flex-col justify-center items-center gap-4 pb-[30px] xl:mb-8">
-          <h3 className="h3 text-center w-full">Let's connect!</h3>
-          <p className="p max-w-[600px] mx-auto text-center">
+        <div className="flex flex-col justify-center items-center gap-2 pb-[30px] xl:mb-8">
+          <motion.h3
+            variants={fadeIn("down", 0.4)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.2 }}
+            className="h3 text-center w-full"
+          >
+            Let's connect!
+          </motion.h3>
+          <motion.p
+            variants={fadeIn("down", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.2 }}
+            className="p max-w-[600px] mx-auto text-center"
+          >
             Reach out to discuss opportunities, projects, or simply to start a
             conversation. Fill out the form below to get in touch.
-          </p>
+          </motion.p>
         </div>
         <div className="flex flex-col xl:flex-row items-center gap-[30px]">
           {/* info */}

@@ -24,7 +24,7 @@ const Home = () => {
           <div className="flex flex-col gap-6 order-2 xl:order-none w-auto max-w-[490px] xl:max-w-[490px] text-center">
             {/* hello */}
             <motion.h1
-              variants={fadeIn("up", 0.4)}
+              variants={fadeIn("down", 0.8)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.2 }}
@@ -37,7 +37,7 @@ const Home = () => {
             </motion.h1>
             {/* bio */}
             <motion.div
-              variants={fadeIn("up", 0.6)}
+              variants={fadeIn("down", 0.6)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.2 }}
@@ -51,7 +51,7 @@ const Home = () => {
             </motion.div>
             {/* take action */}
             <motion.h3
-              variants={fadeIn("up", 0.8)}
+              variants={fadeIn("down", 0.4)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.2 }}
@@ -62,7 +62,7 @@ const Home = () => {
             </motion.h3>
             {/* btn and socials */}
             <motion.div
-              variants={fadeIn("up", 1.0)}
+              variants={fadeIn("down", 0.2)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.2 }}
