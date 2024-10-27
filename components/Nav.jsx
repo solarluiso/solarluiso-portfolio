@@ -25,7 +25,7 @@ const links = [
 const Nav = () => {
   const pathname = usePathname();
   return (
-    <nav className="flex gap-8 font-bold uppercase">
+    <nav className="flex gap-8 font-bold">
       {links.map((link, index) => {
         return (
           <Link
@@ -33,7 +33,7 @@ const Nav = () => {
             key={index}
             className={`${
               link.path === pathname && "text-accent border-b-2 border-accent"
-            }font-medium hover:text-accent transition-all`}
+            } font-bold hover:text-accent transition-all capitalize`}
           >
             {link.name}
           </Link>
