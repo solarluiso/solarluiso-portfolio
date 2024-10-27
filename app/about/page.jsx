@@ -28,27 +28,28 @@ const about = {
     "As a creative problem solver, I excel at turning ideas into efficient software solutions. I am responsible for building and maintaining websites and web applications.",
   info: [
     {
-      fieldName: "Name:",
+      fieldName: "Name",
       fieldValue: "Luis Solar",
     },
     {
-      fieldName: "Phone:",
-      fieldValue: "(+1) 786 825 4670",
-    },
-    {
-      fieldName: "Experience:",
+      fieldName: "Experience",
       fieldValue: "2+ Years",
     },
     {
-      fieldName: "Email:",
+      fieldName: "Phone",
+      fieldValue: "(+1) 786 825 4670",
+    },
+
+    {
+      fieldName: "Email",
       fieldValue: "solarluiso@gmail.com",
     },
     {
-      fieldName: "Nationality:",
+      fieldName: "Nationality",
       fieldValue: "American",
     },
     {
-      fieldName: "Languages:",
+      fieldName: "Languages",
       fieldValue: "English, Spanish",
     },
   ],
@@ -186,19 +187,25 @@ const About = () => {
                     {about.description}
                   </p>
                 </div>
-                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 mx-auto xl:mx-0">
-                  {about.info.map((item, index) => {
-                    return (
-                      <li
-                        key={index}
-                        className="flex items-center justify-start gap-4"
-                      >
-                        <span className="text-accent">{item.fieldName}</span>
-                        <span className="p text-xl">{item.fieldValue}</span>
-                      </li>
-                    );
-                  })}
-                </ul>
+                <ScrollArea className="h-[400px]">
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-[30px]">
+                    {about.info.map((item, index) => {
+                      return (
+                        <li
+                          key={index}
+                          className="bg-secondary h-[100px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start"
+                        >
+                          <span className="text-accent uppercase">
+                            {item.fieldName}
+                          </span>
+                          <h3 className="text-xl text-center lg:text-left">
+                            {item.fieldValue}
+                          </h3>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </ScrollArea>
               </div>
             </TabsContent>
 
