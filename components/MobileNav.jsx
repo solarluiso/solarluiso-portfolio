@@ -53,7 +53,7 @@ const MobileNav = () => {
                 className={`${
                   link.path === pathname &&
                   "text-accent border-b-2 border-accent"
-                } text-2xl capitalize hover:text-accent transition-all`}
+                } text-2xl font-bold uppercase hover:text-accent transition-all`}
               >
                 {link.name}
               </Link>
