@@ -162,9 +162,9 @@ const About = () => {
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
-      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
+      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0 xl:items-start"
     >
-      <div className="container mx-auto xl:h-[564px]">
+      <div className="container mx-auto">
         <Tabs
           defaultValue="about"
           className="flex flex-col xl:flex-row gap-[60px]"

@@ -33,68 +33,73 @@ const Contact = () => {
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
-      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
+      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0 xl:items-start"
     >
       <div className="container mx-auto">
-        {/* message */}
-        <div className="flex flex-col justify-center items-center gap-2 pb-[30px] xl:mb-8">
-          <motion.h3
-            variants={fadeIn("down", 0.4)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.2 }}
-            className="h3 text-center w-full"
-          >
-            Let's connect!
-          </motion.h3>
-          <motion.p
-            variants={fadeIn("down", 0.2)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.2 }}
-            className="p max-w-[600px] mx-auto text-center"
-          >
-            Reach out to discuss opportunities, projects, or simply to start a
-            conversation. Fill out the form below to get in touch.
-          </motion.p>
-        </div>
-        <div className="flex flex-col xl:flex-row items-center gap-[30px]">
-          {/* info */}
-          <div className="w-full max-w-xl p-[100px] flex items-center justify-center rounded-xl xl:mb-0 border border-accent/10 border-dashed">
-            <ul className="flex flex-col gap-10">
-              {info.map((item, index) => {
-                return (
-                  <li key={index} className="flex items-center gap-6">
-                    <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-secondary text-accent rounded-md flex items-center justify-center">
-                      <div className="text-[28px]">{item.icon}</div>
-                    </div>
-                    <div className="flex-1">
-                      <p className="uppercase text-white">{item.title}</p>
-                      <h3 className="font-secondary text-lg text-white/60">
-                        {item.description}
-                      </h3>
-                    </div>
-                  </li>
-                );
-              })}
-            </ul>
+        <div className="flex flex-col items-center justify-center gap-[30px] xl:gap-[60px]">
+          {/* message */}
+          <div className="flex flex-col justify-center items-center gap-2">
+            <motion.h3
+              variants={fadeIn("down", 0.4)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.2 }}
+              className="h3 text-center w-full"
+            >
+              Let's connect!
+            </motion.h3>
+            <motion.p
+              variants={fadeIn("down", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.2 }}
+              className="p max-w-[600px] mx-auto text-center"
+            >
+              Reach out to discuss opportunities, projects, or simply to start a
+              conversation. Fill out the form below to get in touch.
+            </motion.p>
           </div>
-          {/* form */}
-          <div className="w-full max-w-xl">
-            <form className="flex flex-col gap-6 p-10 bg-secondary rounded-xl">
-              {/* input */}
-              <Input type="name" placeholder="Your name" />
-              <Input type="email" placeholder="Your email" />
-              {/* textarea */}
-              <Textarea
-                className="h-[200px]"
-                placeholder="Type your message here!"
-              />
-              {/* btn */}
-              <Button size="md" className="max-w-40 uppercase">
-                Send email
-              </Button>
-            </form>
+          {/* info + form */}
+          <div className="w-full flex flex-col xl:flex-row justify-between items-center gap-[30px]">
+            {/* info */}
+            <div className="w-full max-w-[580px] xl:w-[50%]">
+              <div className="flex items-center justify-center xl:h-[496px] rounded-xl p-10 border border-accent/10 border-dashed">
+                <ul className="flex flex-col gap-10">
+                  {info.map((item, index) => {
+                    return (
+                      <li key={index} className="flex items-center gap-6">
+                        <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-secondary text-accent rounded-md flex items-center justify-center">
+                          <div className="text-[28px]">{item.icon}</div>
+                        </div>
+                        <div className="flex-1">
+                          <p className="uppercase text-white">{item.title}</p>
+                          <h3 className="font-secondary text-lg text-white/60">
+                            {item.description}
+                          </h3>
+                        </div>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            </div>
+            {/* form */}
+            <div className="w-full max-w-[580px] xl:w-[50%]">
+              <form className="flex flex-col gap-6 p-10 bg-secondary rounded-xl">
+                {/* input */}
+                <Input type="name" placeholder="Your name" />
+                <Input type="email" placeholder="Your email" />
+                {/* textarea */}
+                <Textarea
+                  className="h-[200px]"
+                  placeholder="Type your message here!"
+                />
+                {/* btn */}
+                <Button size="md" className="max-w-40 uppercase">
+                  Send email
+                </Button>
+              </form>
+            </div>
           </div>
         </div>
       </div>

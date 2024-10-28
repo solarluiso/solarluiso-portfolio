@@ -16,12 +16,12 @@ const Home = () => {
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
-      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
+      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0 xl:items-start"
     >
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-16 xl:pb-28 xl:px-28">
+        <div className="flex flex-col xl:flex-row items-center justify-between xl:py-[60px] xl:px-28">
           {/* text */}
-          <div className="flex flex-col gap-6 order-2 xl:order-none w-auto max-w-[490px] xl:max-w-[490px] text-center">
+          <div className="flex flex-col gap-6 order-2 xl:order-none w-auto max-w-[490px] xl:max-w-[490px] text-center xl:text-left">
             {/* hello */}
             <motion.h1
               variants={fadeIn("down", 0.8)}
@@ -41,7 +41,7 @@ const Home = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.2 }}
-              className="flex flex-col gap-2 xl:text-left"
+              className="flex flex-col gap-2"
             >
               <h3 className="h3 text-white/60">Web Developer</h3>
               <p className="p max-w-[400px] text-xl">
@@ -55,7 +55,7 @@ const Home = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.2 }}
-              className="h3 xl:text-left"
+              className="h3"
             >
               Let's create something <br />
               remarkable together!
