@@ -76,7 +76,7 @@ const Projects = () => {
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0 xl:items-start"
     >
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row items-center justify-center gap-[60px] xl:pt-14">
+        <div className="flex flex-col xl:flex-row items-center justify-center gap-[60px] xl:py-[60px]">
           {/* text */}
           <div className="w-full max-w-[536px] xl:w-[400px] flex flex-col xl:justify-between order-2 xl:order-none">
             <div className="flex flex-col gap-[30px]">

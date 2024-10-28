@@ -19,7 +19,7 @@ const Home = () => {
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0 xl:items-start"
     >
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row items-center justify-between xl:py-[60px] xl:px-28">
+        <div className="flex flex-col xl:flex-row items-center justify-center xl:gap-[60px] xl:py-[60px]">
           {/* text */}
           <div className="flex flex-col gap-6 order-2 xl:order-none w-auto max-w-[490px] xl:max-w-[490px] text-center xl:text-left">
             {/* hello */}
