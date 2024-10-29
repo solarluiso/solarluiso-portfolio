@@ -6,9 +6,8 @@ import {
   FaJs,
   FaReact,
   FaNodeJs,
-  FaFigma,
-} from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+} from "@/node_modules/react-icons/fa";
+import { SiTailwindcss, SiNextdotjs, SiFlask } from "react-icons/si";
 import { motion } from "framer-motion";
 
 // components
@@ -90,8 +89,8 @@ const skills = {
       name: "node.js",
     },
     {
-      icon: <FaFigma />,
-      name: "figma",
+      icon: <SiFlask />,
+      name: "flask",
     },
   ],
 };
@@ -162,7 +161,7 @@ const About = () => {
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
-      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0 xl:items-start"
+      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-6 xl:items-start"
     >
       <div className="container mx-auto">
         <Tabs

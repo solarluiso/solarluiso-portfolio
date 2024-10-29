@@ -5,8 +5,8 @@ import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 
-import Link from "next/link";
-import Image from "next/image";
+import Link from "@/node_modules/next/link";
+import Image from "@/node_modules/next/image";
 import { motion } from "framer-motion";
 
 // components
@@ -73,43 +73,48 @@ const Projects = () => {
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
-      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0 xl:items-start"
+      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-6 xl:items-start"
     >
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row items-center justify-center gap-[60px] xl:py-[60px]">
+        <div className="flex flex-col items-center justify-center gap-[60px] xl:gap-0">
           {/* text */}
-          <div className="w-full max-w-[536px] xl:w-[400px] flex flex-col xl:justify-between order-2 xl:order-none">
-            <div className="flex flex-col gap-[30px]">
-              {/* outline num */}
-              <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
-                {project.num}
-              </div>
-              <div className="flex flex-col gap-4">
-                {/* project category */}
-                <h3 className="h3">{project.category} project</h3>
-                {/* project description */}
-                <p className="p text-xl">{project.description}</p>
-                {/* stack */}
-                <ul className="flex gap-4">
-                  {project.stack.map((item, index) => {
-                    return (
-                      <li
-                        key={index}
-                        className="text-md xl:text-lg text-accent"
-                      >
-                        {item.name}
-                        {/* remove the last comma */}
-                        {index !== project.stack.length - 1 && ","}
-                      </li>
-                    );
-                  })}
-                </ul>
+          <div className="w-full flex xl:justify-start max-w-[640px] xl:max-w-none  order-2 xl:order-none">
+            <div className="flex flex-col gap-[30px] xl:gap-[18px]">
+              {/* num + info */}
+              <div className="flex flex-col xl:flex-row xl:items-center gap-[30px] xl:gap-[145px]">
+                {/* outline num */}
+                <div className="text-8xl xl:text-[100px] leading-none font-extrabold text-transparent text-outline">
+                  {project.num}
+                </div>
+                {/* info */}
+                <div className="flex flex-col gap-4 xl:gap-2">
+                  {/* project category */}
+                  <h3 className="h2">{project.category} project</h3>
+                  {/* project description */}
+                  <p className="p text-xl">{project.description}</p>
+                  {/* stack */}
+                  <ul className="flex gap-2">
+                    {project.stack.map((item, index) => {
+                      return (
+                        <li
+                          key={index}
+                          className="text-md text-accent leading-[1.5]"
+                        >
+                          {item.name}
+                          {/* remove the last comma */}
+                          {index !== project.stack.length - 1 && ","}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
               </div>
 
               {/* border */}
               <div className="border border-white/20"></div>
+
               {/* buttons */}
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 xl:mt-2">
                 {/* live project button */}
                 <Link
                   href={project.live}
@@ -118,7 +123,7 @@ const Projects = () => {
                 >
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                      <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-white/5 flex justify-center items-center group">
                         <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
                       </TooltipTrigger>
                       <TooltipContent>
@@ -135,7 +140,7 @@ const Projects = () => {
                 >
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                      <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-white/5 flex justify-center items-center group">
                         <BsGithub className="text-white text-3xl group-hover:text-accent" />
                       </TooltipTrigger>
                       <TooltipContent>
@@ -148,17 +153,17 @@ const Projects = () => {
             </div>
           </div>
           {/* photo */}
-          <div className="w-full max-w-[536px]">
+          <div className="w-full max-w-[640px]">
             <Swiper
               spaceBetween={30}
               slidesPerView={1}
-              className="xl:h-[402px]"
+              className="xl:h-[420px]"
               onSlideChange={handleSlideChange}
             >
               {projects.map((project, index) => {
                 return (
                   <SwiperSlide key={index} className="w-full">
-                    <div className="h-[302px] relative group flex justify-center items-center bg-pink-50/20">
+                    <div className="h-[360px] relative group flex justify-center items-center bg-pink-50/20">
                       {/* overlay */}
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       {/* image */}
