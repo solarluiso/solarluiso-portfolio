@@ -1,3 +1,0 @@
-Flask
-Flask-Mail
-python-dotenv
