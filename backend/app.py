@@ -18,6 +18,11 @@ app.config['MAIL_DEFAULT_SENDER'] = os.getenv('MAIL_DEFAULT_SENDER', os.getenv('
 
 mail = Mail(app)
 
+# Root route for testing
+@app.route('/')
+def index():
+    return "Flask server is running!"
+
 # Contact form endpoint
 @app.route('/api/contact', methods=['POST'])
 def contact():
