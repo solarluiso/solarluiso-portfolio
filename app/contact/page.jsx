@@ -1,11 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import {
-  FaPhoneAlt,
-  FaEnvelope,
-  FaMapMarkerAlt,
-} from "@/node_modules/react-icons/fa";
+import Swal from "sweetalert2";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/lib/variants";
 
@@ -13,6 +9,7 @@ import { fadeIn } from "@/lib/variants";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+import { useRef } from "react"; // Import useRef
 
 const info = [
   {
@@ -33,38 +30,35 @@ const info = [
 ];
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const [status, setStatus] = useState(null);
+  const formRef = useRef(null); // Create a reference for the form
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
+  async function handleSubmit(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await fetch("http://localhost:5000/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+    formData.append("access_key", "c83ad2be-7bc5-4273-9457-6524f5deda36");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    });
+    const result = await response.json();
+    if (result.success) {
+      Swal.fire({
+        title: "Success!",
+        text: "Message sent successfully!",
+        icon: "success",
       });
-
-      if (response.ok) {
-        setStatus("Message sent successfully!");
-        setFormData({ name: "", email: "", message: "" }); // Clear form
-      } else {
-        setStatus("Failed to send message.");
-      }
-    } catch (error) {
-      console.error("Error:", error);
-      setStatus("Error sending message. Please try again.");
+      formRef.current.reset(); // Reset the form
     }
-  };
+  }
 
   return (
     <motion.div
@@ -123,32 +117,19 @@ const Contact = () => {
           {/* form */}
           <div className="w-full max-w-[580px] xl:w-[50%]">
             <form
+              ref={formRef} // Attach the reference to the form
               onSubmit={handleSubmit}
               className="flex flex-col gap-6 p-10 bg-secondary rounded-xl"
             >
               <p className="text-[16px] uppercase text-white/60">
                 Fill out the form below to get in touch:
               </p>
-              <Input
-                name="name"
-                type="text"
-                placeholder="Your name"
-                value={formData.name}
-                onChange={handleChange}
-              />
-              <Input
-                name="email"
-                type="email"
-                placeholder="Your email"
-                value={formData.email}
-                onChange={handleChange}
-              />
+              <Input name="name" type="text" placeholder="Your name" />
+              <Input name="email" type="email" placeholder="Your email" />
               <Textarea
                 name="message"
                 className="h-[200px]"
                 placeholder="Type your message here!"
-                value={formData.message}
-                onChange={handleChange}
               />
               <Button type="submit" size="md" className="max-w-40 uppercase">
                 Send email
