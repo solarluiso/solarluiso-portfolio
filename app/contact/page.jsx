@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react"; // Import useRef
+import { useRef, useState } from "react";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/lib/variants";
@@ -31,6 +31,7 @@ const info = [
 
 const Contact = () => {
   const formRef = useRef(null); // Create a reference for the form
+  const [status, setStatus] = useState(""); // Define state for status
 
   async function handleSubmit(event) {
     event.preventDefault();
