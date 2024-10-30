@@ -73,27 +73,27 @@ const Projects = () => {
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
-      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-6 xl:items-start"
+      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0 xl:items-start"
     >
       <div className="container mx-auto">
-        <div className="flex flex-col items-center justify-center gap-[60px] xl:gap-0">
+        <div className="flex flex-col items-center xl:justify-center gap-[60px] xl:gap-0">
           {/* text */}
-          <div className="w-full flex xl:justify-start max-w-[640px] xl:max-w-none  order-2 xl:order-none">
-            <div className="flex flex-col gap-[30px] xl:gap-[18px]">
+          <div className="w-full flex justify-start xl:justify-center max-w-[640px] xl:max-w-none order-2 xl:order-none">
+            <div className="w-full flex flex-col gap-[30px] xl:gap-[18px]">
               {/* num + info */}
-              <div className="flex flex-col xl:flex-row xl:items-center gap-[30px] xl:gap-[145px]">
+              <div className="flex flex-col xl:flex-row justify-between items-start xl:items-center gap-[30px]">
                 {/* outline num */}
-                <div className="text-8xl xl:text-[100px] leading-none font-extrabold text-transparent text-outline">
+                <div className="text-8xl xl:text-[110px] font-extrabold text-transparent text-outline">
                   {project.num}
                 </div>
                 {/* info */}
-                <div className="flex flex-col gap-4 xl:gap-2">
+                <div className="flex flex-col gap-4 xl:gap-2 xl:text-right xl:pr-[268px]">
                   {/* project category */}
-                  <h3 className="h2">{project.category} project</h3>
+                  <h2 className="h2">{project.category} project</h2>
                   {/* project description */}
-                  <p className="p text-xl">{project.description}</p>
+                  <p className="p">{project.description}</p>
                   {/* stack */}
-                  <ul className="flex gap-2">
+                  <ul className="flex gap-2 xl:justify-end">
                     {project.stack.map((item, index) => {
                       return (
                         <li
@@ -114,7 +114,7 @@ const Projects = () => {
               <div className="border border-white/20"></div>
 
               {/* buttons */}
-              <div className="flex items-center gap-4 xl:mt-2">
+              <div className="flex items-center gap-4 xl:justify-end xl:mt-3">
                 {/* live project button */}
                 <Link
                   href={project.live}
@@ -123,7 +123,7 @@ const Projects = () => {
                 >
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
-                      <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-white/5 flex justify-center items-center group">
+                      <TooltipTrigger className="w-[55px] h-[55px] rounded-full bg-white/5 flex justify-center items-center group">
                         <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
                       </TooltipTrigger>
                       <TooltipContent>
@@ -140,7 +140,7 @@ const Projects = () => {
                 >
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
-                      <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-white/5 flex justify-center items-center group">
+                      <TooltipTrigger className="w-[55px] h-[55px] rounded-full bg-white/5 flex justify-center items-center group">
                         <BsGithub className="text-white text-3xl group-hover:text-accent" />
                       </TooltipTrigger>
                       <TooltipContent>
@@ -182,7 +182,7 @@ const Projects = () => {
               })}
               {/* slider buttons */}
               <WorkSliderBtns
-                containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
+                containerStyles="flex gap-2 absolute left-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
                 btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
               />
             </Swiper>

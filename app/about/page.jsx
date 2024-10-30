@@ -7,7 +7,7 @@ import {
   FaReact,
   FaNodeJs,
 } from "@/node_modules/react-icons/fa";
-import { SiTailwindcss, SiNextdotjs, SiFlask } from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs, SiDocker } from "react-icons/si";
 import { motion } from "framer-motion";
 
 // components
@@ -89,8 +89,8 @@ const skills = {
       name: "node.js",
     },
     {
-      icon: <SiFlask />,
-      name: "flask",
+      icon: <SiDocker />,
+      name: "docker",
     },
   ],
 };

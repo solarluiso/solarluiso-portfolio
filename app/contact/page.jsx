@@ -1,15 +1,15 @@
 "use client";
 
-import Swal from "sweetalert2";
+import { useRef } from "react"; // Import useRef
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/lib/variants";
+import Swal from "sweetalert2";
 
 // components
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import { useRef } from "react"; // Import useRef
 
 const info = [
   {
