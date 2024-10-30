@@ -21,7 +21,7 @@ const Home = () => {
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row items-center justify-center xl:gap-[60px] xl:py-[60px]">
           {/* text */}
-          <div className="flex flex-col gap-6 order-2 xl:order-none w-auto max-w-[490px] xl:max-w-[490px] text-center xl:text-left">
+          <div className="flex flex-col gap-6 xl:items-end order-2 xl:order-none w-auto max-w-[490px] xl:max-w-[490px] text-center xl:text-left">
             {/* hello */}
             <motion.h1
               variants={fadeIn("down", 0.8)}
