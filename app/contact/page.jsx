@@ -74,25 +74,11 @@ const Contact = () => {
           <div className="w-full max-w-[580px] xl:w-[50%] flex flex-col gap-[30px]">
             {/* message */}
             <div className="flex flex-col justify-center items-center gap-2 rounded-xl p-[30px] border border-accent/10 border-dashed">
-              <motion.h3
-                variants={fadeIn("down", 0.4)}
-                initial="hidden"
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.2 }}
-                className="h3 text-center w-full"
-              >
-                Let's connect!
-              </motion.h3>
-              <motion.p
-                variants={fadeIn("down", 0.2)}
-                initial="hidden"
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.2 }}
-                className="p max-w-[336px] mx-auto text-center"
-              >
+              <h3 className="h3 text-center w-full">Let's connect!</h3>
+              <p className="p max-w-[336px] mx-auto text-center">
                 Reach out to discuss opportunities, projects, or simply to start
                 a conversation.
-              </motion.p>
+              </p>
             </div>
             {/* info */}
             <div className="flex flex-col items-center justify-center rounded-xl p-10 border border-accent/10 border-dashed">
