@@ -73,7 +73,7 @@ const Projects = () => {
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
-      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0 xl:items-start"
+      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-6 xl:items-start"
     >
       <div className="container mx-auto">
         <div className="flex flex-col items-center xl:justify-center gap-[60px] xl:gap-0">
@@ -82,18 +82,14 @@ const Projects = () => {
             <div className="w-full flex flex-col gap-[30px] xl:gap-[18px]">
               {/* num + info */}
               <div className="flex flex-col xl:flex-row justify-between items-start xl:items-center gap-[30px]">
-                {/* outline num */}
-                <div className="text-8xl xl:text-[110px] font-extrabold text-transparent text-outline">
-                  {project.num}
-                </div>
                 {/* info */}
-                <div className="flex flex-col gap-4 xl:gap-2 xl:text-right xl:pr-[268px]">
+                <div className="flex flex-col gap-4 xl:gap-2 order-2 xl:order-none xl:pl-[267px]">
                   {/* project category */}
                   <h2 className="h2">{project.category} project</h2>
                   {/* project description */}
                   <p className="p">{project.description}</p>
                   {/* stack */}
-                  <ul className="flex gap-2 xl:justify-end">
+                  <ul className="flex gap-2">
                     {project.stack.map((item, index) => {
                       return (
                         <li
@@ -108,13 +104,17 @@ const Projects = () => {
                     })}
                   </ul>
                 </div>
+                {/* outline num */}
+                <div className="text-8xl xl:text-[110px] font-extrabold text-transparent text-outline">
+                  {project.num}
+                </div>
               </div>
 
               {/* border */}
               <div className="border border-white/20"></div>
 
               {/* buttons */}
-              <div className="flex items-center gap-4 xl:justify-end xl:mt-3">
+              <div className="flex items-center gap-4 xl:justify-end xl:mt-4">
                 {/* live project button */}
                 <Link
                   href={project.live}
@@ -182,7 +182,7 @@ const Projects = () => {
               })}
               {/* slider buttons */}
               <WorkSliderBtns
-                containerStyles="flex gap-2 absolute left-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
+                containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
                 btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
               />
             </Swiper>
