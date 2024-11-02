@@ -1,13 +1,13 @@
 "use client";
 
+import { FaJs, FaReact, FaNodeJs } from "@/node_modules/react-icons/fa";
 import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaNodeJs,
-} from "@/node_modules/react-icons/fa";
-import { SiTailwindcss, SiNextdotjs, SiDocker } from "react-icons/si";
+  SiTailwindcss,
+  SiNextdotjs,
+  SiExpress,
+  SiMongodb,
+  SiDocker,
+} from "react-icons/si";
 import { motion } from "framer-motion";
 
 // components
@@ -61,36 +61,36 @@ const skills = {
     "Adept in the React Ecosystem, I enjoy working with modern tools to create fast, responsive, and visually engaging web experiences.",
   skillList: [
     {
-      icon: <FaHtml5 />,
-      name: "html 5",
-    },
-    {
-      icon: <FaCss3 />,
-      name: "css 3",
-    },
-    {
       icon: <FaJs />,
-      name: "javascript",
+      name: "Javascript",
     },
     {
       icon: <FaReact />,
-      name: "react.js",
+      name: "React.js",
     },
     {
       icon: <SiNextdotjs />,
-      name: "next.js",
+      name: "Next.js",
     },
     {
       icon: <SiTailwindcss />,
-      name: "tailwind.css",
+      name: "TailwindCSS",
     },
     {
       icon: <FaNodeJs />,
-      name: "node.js",
+      name: "Node.js",
+    },
+    {
+      icon: <SiExpress />,
+      name: "Express.js",
+    },
+    {
+      icon: <SiMongodb />,
+      name: "MongoDB",
     },
     {
       icon: <SiDocker />,
-      name: "docker",
+      name: "Docker",
     },
   ],
 };
@@ -100,7 +100,7 @@ const experience = {
   icon: "/assets/about/badge.svg",
   title: "My experience",
   description:
-    "Proficient in frontend and backend technologies, collaborating with teams through effective communication and shared expertise.",
+    "Proficient in frontend and backend technologies, working effectively with cross-functional teams and stakeholders.",
   items: [
     {
       position: "Contributed to an open-source project.",
@@ -229,7 +229,7 @@ const About = () => {
                               </div>
                             </TooltipTrigger>
                             <TooltipContent>
-                              <p className="capitalize">{skill.name}</p>
+                              <p className="">{skill.name}</p>
                             </TooltipContent>
                           </Tooltip>
                         </TooltipProvider>

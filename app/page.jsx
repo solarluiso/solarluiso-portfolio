@@ -19,9 +19,9 @@ const Home = () => {
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0 xl:items-start"
     >
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row items-center justify-center xl:gap-[60px] xl:py-[60px]">
+        <div className="flex flex-col xl:flex-row items-center justify-center xl:gap-[60px] xl:py-[58px]">
           {/* text */}
-          <div className="flex flex-col gap-6 xl:items-end order-2 xl:order-none w-auto max-w-[490px] xl:max-w-[490px] text-center xl:text-left">
+          <div className="flex flex-col gap-6 order-2 xl:order-none w-auto max-w-[490px] xl:max-w-[490px] text-center xl:text-left">
             {/* hello */}
             <motion.h1
               variants={fadeIn("down", 0.8)}
@@ -41,12 +41,12 @@ const Home = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.2 }}
-              className="flex flex-col gap-2"
+              className="flex flex-col gap-2 xl:ml-12"
             >
               <h3 className="h3 text-white/60">Web Developer</h3>
-              <p className="p max-w-[400px] text-xl">
-                I build thoughtful and effective web solutions while sipping
-                coffee on a glorious day.
+              <p className="p max-w-[360px] text-xl">
+                I build effective web solutions while sipping coffee on a
+                glorious day.
               </p>
             </motion.div>
             {/* take action */}
@@ -55,7 +55,7 @@ const Home = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.2 }}
-              className="h3"
+              className="h3 xl:ml-24"
             >
               Let's create something <br />
               remarkable together!
