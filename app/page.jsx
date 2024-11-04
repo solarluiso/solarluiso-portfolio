@@ -19,16 +19,16 @@ const Home = () => {
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0 xl:items-start"
     >
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row items-center justify-center xl:gap-[60px] xl:py-[58px]">
+        <div className="flex flex-col xl:flex-row items-center justify-center xl:gap-[100px] xl:py-[60px]">
           {/* text */}
-          <div className="flex flex-col gap-6 order-2 xl:order-none w-auto max-w-[490px] xl:max-w-[490px] text-center xl:text-left">
+          <div className="flex flex-col gap-6 order-2 xl:order-none w-auto max-w-[490px] text-center xl:text-left">
             {/* hello */}
             <motion.h1
               variants={fadeIn("down", 0.8)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.2 }}
-              className="h1 flex flex-col"
+              className="h1 flex flex-col xl:h-[168px]"
             >
               <span className="">Hello!</span>
               <span>
@@ -66,7 +66,7 @@ const Home = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.2 }}
-              className="flex flex-col xl:flex-row xl:mt-2 items-center gap-8"
+              className="flex flex-col xl:flex-row xl:mt-[5px] items-center gap-8"
             >
               <a href="/assets/Luis-Solar-CV.pdf" download>
                 <Button
@@ -87,7 +87,7 @@ const Home = () => {
             </motion.div>
           </div>
           {/* photo */}
-          <div className="order-1 xl:order-none mb-8 xl:mb-0">
+          <div className="mb-8 xl:mb-0">
             <Photo />
           </div>
         </div>
