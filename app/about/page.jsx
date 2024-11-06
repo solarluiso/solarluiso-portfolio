@@ -24,7 +24,7 @@ import {
 const about = {
   title: "About me",
   description:
-    "With a focus on innovation and functionality, I am passionate about developing intuitive software that helps bring something valuable to the world, fulfilling my destiny of contributing meaningfully through my work.",
+    "Driven by curiosity and perseverance, I am passionate about developing intuitive software that brings value to the world, fulfilling my destiny of contributing meaningfully through my work.",
   info: [
     {
       fieldName: "Name",
