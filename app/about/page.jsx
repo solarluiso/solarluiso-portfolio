@@ -24,7 +24,7 @@ import {
 const about = {
   title: "About me",
   description:
-    "As a creative problem solver, I excel at turning ideas into efficient software solutions. I am responsible for building and maintaining websites and web applications.",
+    "With a focus on innovation and functionality, I am passionate about developing intuitive software that helps bring something valuable to the world, fulfilling my destiny of contributing meaningfully through my work.",
   info: [
     {
       fieldName: "Name",
@@ -44,8 +44,8 @@ const about = {
       fieldValue: "solarluiso@gmail.com",
     },
     {
-      fieldName: "Nationality",
-      fieldValue: "American",
+      fieldName: "Location",
+      fieldValue: "Washington DC, USA",
     },
     {
       fieldName: "Languages",
@@ -58,11 +58,11 @@ const about = {
 const skills = {
   title: "My skills",
   description:
-    "Adept in the React Ecosystem, I enjoy working with modern tools to create fast, responsive, and visually engaging web experiences.",
+    "Adept in the JavaScript ecosystem, I leverage modern frameworks and tools to build fast, visually engaging web applications that deliver seamless user experiences.",
   skillList: [
     {
       icon: <FaJs />,
-      name: "Javascript",
+      name: "JavaScript",
     },
     {
       icon: <FaReact />,
@@ -223,10 +223,13 @@ const About = () => {
                       <li key={index}>
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
-                            <TooltipTrigger className="w-full h-[150px] bg-secondary rounded-xl flex justify-center items-center group">
+                            <TooltipTrigger className="w-full h-[150px] bg-secondary rounded-xl flex flex-col justify-center items-center group">
                               <div className="text-6xl group-hover:text-accent transition-all duration-300">
                                 {skill.icon}
                               </div>
+                              <p className="text-sm mt-2 xl:hidden group-hover:text-accent transition-all duration-300">
+                                {skill.name}
+                              </p>
                             </TooltipTrigger>
                             <TooltipContent>
                               <p className="">{skill.name}</p>
