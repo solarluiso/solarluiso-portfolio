@@ -207,7 +207,7 @@ const About = () => {
             </TabsContent>
 
             {/* skills */}
-            <TabsContent value="skills" className="w-full h-full">
+            <TabsContent value="skills" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <div className="flex flex-col gap-4">
                   <h2 className="h2">{skills.title}</h2>
