@@ -85,7 +85,12 @@ const Projects = () => {
                 {/* info */}
                 <div className="flex flex-col gap-2 order-2 xl:order-none xl:pl-[267px]">
                   {/* project category */}
-                  <h2 className="h2 mb-2">{project.category} project</h2>
+                  <h2 className="h2 mb-2">
+                    <span className="font-extrabold text-transparent text-outline">
+                      project:{" "}
+                    </span>
+                    {project.title}
+                  </h2>
                   {/* project description */}
                   <p className="p">{project.description}</p>
                   {/* stack */}
