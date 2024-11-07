@@ -24,7 +24,7 @@ import {
 const about = {
   title: "About me",
   description:
-    "Driven by curiosity and perseverance, I am passionate about developing intuitive software that brings value to the world, fulfilling my destiny of contributing meaningfully through my work.",
+    "Driven by curiosity and perseverance, I am passionate about developing intuitive software that brings value to the world. I believe in the power of technology to bridge gaps, spark positive change, and empower users to achieve their goals.",
   info: [
     {
       fieldName: "Name",
@@ -58,7 +58,7 @@ const about = {
 const skills = {
   title: "My skills",
   description:
-    "Adept in the JavaScript ecosystem, I leverage modern frameworks and tools to build fast, visually engaging web applications that deliver seamless user experiences.",
+    "Adept in the JavaScript ecosystem, I work with modern frameworks and tools to build fast and visually engaging web applications that deliver seamless user experiences.",
   skillList: [
     {
       icon: <FaJs />,
@@ -182,9 +182,7 @@ const About = () => {
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <div className="flex flex-col gap-4">
                   <h2 className="h2">{about.title}</h2>
-                  <p className="p max-w-[600px] mx-auto xl:mx-0">
-                    {about.description}
-                  </p>
+                  <p className="p">{about.description}</p>
                 </div>
                 <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 md:grid-cols-2 gap-[30px]">
@@ -213,9 +211,7 @@ const About = () => {
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <div className="flex flex-col gap-4">
                   <h2 className="h2">{skills.title}</h2>
-                  <p className="p max-w-[600px] mx-auto xl:mx-0">
-                    {skills.description}
-                  </p>
+                  <p className="p">{skills.description}</p>
                 </div>
                 <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
                   {skills.skillList.map((skill, index) => {
@@ -227,12 +223,14 @@ const About = () => {
                               <div className="text-6xl group-hover:text-accent transition-all duration-300">
                                 {skill.icon}
                               </div>
+                              {/* Display the skill name directly on smaller screens */}
                               <p className="text-sm mt-2 xl:hidden group-hover:text-accent transition-all duration-300">
                                 {skill.name}
                               </p>
                             </TooltipTrigger>
-                            <TooltipContent>
-                              <p className="">{skill.name}</p>
+                            {/* Tooltip content only visible on xl screens and larger */}
+                            <TooltipContent className="hidden xl:block">
+                              <p>{skill.name}</p>
                             </TooltipContent>
                           </Tooltip>
                         </TooltipProvider>
@@ -248,9 +246,7 @@ const About = () => {
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <div className="flex flex-col gap-4">
                   <h2 className="h2">{experience.title}</h2>
-                  <p className="p max-w-[600px] mx-auto xl:mx-0">
-                    {experience.description}
-                  </p>
+                  <p className="p">{experience.description}</p>
                 </div>
                 <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
@@ -282,9 +278,7 @@ const About = () => {
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <div className="flex flex-col gap-4">
                   <h2 className="h2">{education.title}</h2>
-                  <p className="p max-w-[600px] mx-auto xl:mx-0">
-                    {education.description}
-                  </p>
+                  <p className="p">{education.description}</p>
                 </div>
                 <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
