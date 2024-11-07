@@ -83,19 +83,16 @@ const Projects = () => {
               {/* num + info */}
               <div className="flex flex-col xl:flex-row justify-between items-start xl:items-center gap-[30px]">
                 {/* info */}
-                <div className="flex flex-col gap-4 xl:gap-2 order-2 xl:order-none xl:pl-[267px]">
+                <div className="flex flex-col gap-2 order-2 xl:order-none xl:pl-[267px]">
                   {/* project category */}
-                  <h2 className="h2">{project.category} project</h2>
+                  <h2 className="h2 mb-2">{project.category} project</h2>
                   {/* project description */}
                   <p className="p">{project.description}</p>
                   {/* stack */}
                   <ul className="flex gap-2">
                     {project.stack.map((item, index) => {
                       return (
-                        <li
-                          key={index}
-                          className="text-md text-accent leading-[1.5]"
-                        >
+                        <li key={index} className="text-accent leading-[1.5]">
                           {item.name}
                           {/* remove the last comma */}
                           {index !== project.stack.length - 1 && ","}

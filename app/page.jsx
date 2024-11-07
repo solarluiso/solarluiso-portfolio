@@ -44,7 +44,7 @@ const Home = () => {
               className="flex flex-col gap-2 xl:ml-12"
             >
               <h3 className="h3 text-white/60">Web Developer</h3>
-              <p className="p max-w-[360px] text-xl">
+              <p className="p max-w-[360px]">
                 I build effective web solutions while sipping coffee on a
                 glorious day.
               </p>
