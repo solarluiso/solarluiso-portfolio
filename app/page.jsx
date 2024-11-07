@@ -21,20 +21,21 @@ const Home = () => {
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row items-center justify-center xl:gap-[100px] xl:py-[60px]">
           {/* text */}
-          <div className="flex flex-col gap-6 order-2 xl:order-none w-auto max-w-[490px] text-center xl:text-left">
+          <div className="flex flex-col gap-5 order-2 xl:order-none w-auto max-w-[490px] text-center xl:text-left">
             {/* hello */}
-            <motion.h1
+            <motion.div
               variants={fadeIn("down", 0.8)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.2 }}
-              className="h1 flex flex-col xl:h-[168px]"
+              className="max-h-[150px]"
             >
-              <span className="">Hello!</span>
-              <span>
+              <h1 className="h1">
+                Hello!
+                <br />
                 I'm <span className="text-accent">Luiso</span>
-              </span>
-            </motion.h1>
+              </h1>
+            </motion.div>
             {/* bio */}
             <motion.div
               variants={fadeIn("down", 0.6)}
@@ -44,9 +45,9 @@ const Home = () => {
               className="flex flex-col gap-2 xl:ml-12"
             >
               <h3 className="h3 text-white/60">Web Developer</h3>
-              <p className="p max-w-[360px]">
-                I build effective web solutions while sipping coffee on a
-                glorious day.
+              <p className="p max-w-[312px]">
+                I shape ideas into interactive web experiences, while sipping
+                coffee on a glorious day.
               </p>
             </motion.div>
             {/* take action */}
