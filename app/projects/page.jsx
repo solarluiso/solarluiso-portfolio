@@ -28,7 +28,7 @@ const projects = [
       "A sleek web application designed to enhance productivity and focus.",
     stack: [
       { name: "Next.js" },
-      { name: "Tailwind CSS" },
+      { name: "TailwindCSS" },
       { name: "Framer-Motion" },
     ],
     image: "/assets/projects/thumb1.png",
@@ -40,7 +40,7 @@ const projects = [
     category: "fullstack",
     title: "Fit physique",
     description: "A fitness-focused platform to track workouts and progress.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind CSS" }, { name: "Node.js" }],
+    stack: [{ name: "Next.js" }, { name: "TailwindCSS" }, { name: "Node.js" }],
     image: "/assets/projects/thumb2.png",
     live: "https://fitphysique-pi.vercel.app/",
     github: "https://github.com/solarluiso/fitphysique",
@@ -51,7 +51,7 @@ const projects = [
     title: "Modern bank app",
     description:
       "An innovative banking application with a modern user interface.",
-    stack: [{ name: "React" }, { name: "Tailwind CSS" }, { name: "Vite" }],
+    stack: [{ name: "React.js" }, { name: "TailwindCSS" }, { name: "Vite" }],
     image: "/assets/projects/thumb3.png",
     live: "https://modern-bank-app-ebon-omega.vercel.app/",
     github: "https://github.com/solarluiso/modern-bank-app",
@@ -80,7 +80,7 @@ const Projects = () => {
           {/* text */}
           <div className="w-full flex justify-start xl:justify-center max-w-[640px] xl:max-w-none order-2 xl:order-none">
             <div className="w-full flex flex-col gap-[30px] xl:gap-[18px]">
-              {/* num + info */}
+              {/* info + num */}
               <div className="flex flex-col xl:flex-row justify-between items-start xl:items-center gap-[30px]">
                 {/* info */}
                 <div className="flex flex-col gap-2 order-2 xl:order-none xl:pl-[267px]">
@@ -97,7 +97,10 @@ const Projects = () => {
                   <ul className="flex gap-2">
                     {project.stack.map((item, index) => {
                       return (
-                        <li key={index} className="text-accent leading-[1.5]">
+                        <li
+                          key={index}
+                          className="text-base text-accent leading-[1.5]"
+                        >
                           {item.name}
                           {/* remove the last comma */}
                           {index !== project.stack.length - 1 && ","}
