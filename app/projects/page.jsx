@@ -23,7 +23,7 @@ const projects = [
   {
     num: "01",
     category: "frontend",
-    title: "Focus",
+    title: "Focus ALKFLFKmn", // testing lenght
     description:
       "A sleek web application designed to enhance productivity and focus.",
     stack: [
@@ -97,10 +97,7 @@ const Projects = () => {
                   <ul className="flex gap-2">
                     {project.stack.map((item, index) => {
                       return (
-                        <li
-                          key={index}
-                          className="text-base text-accent leading-[1.5]"
-                        >
+                        <li key={index} className="p text-accent">
                           {item.name}
                           {/* remove the last comma */}
                           {index !== project.stack.length - 1 && ","}
