@@ -23,7 +23,7 @@ const projects = [
   {
     num: "01",
     category: "frontend",
-    title: "Focus ALKFLFKmn", // testing lenght
+    title: "Focus",
     description:
       "A sleek web application designed to enhance productivity and focus.",
     stack: [
