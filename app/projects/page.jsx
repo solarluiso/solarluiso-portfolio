@@ -37,10 +37,14 @@ const projects = [
   },
   {
     num: "02",
-    category: "fullstack",
+    category: "frontend",
     title: "Fit physique",
     description: "A fitness-focused platform to track workouts and progress.",
-    stack: [{ name: "Next.js" }, { name: "TailwindCSS" }, { name: "Node.js" }],
+    stack: [
+      { name: "Next.js" },
+      { name: "TypeScript" },
+      { name: "TailwindCSS" },
+    ],
     image: "/assets/projects/thumb2.png",
     live: "https://fitphysique-pi.vercel.app/",
     github: "https://github.com/solarluiso/fitphysique",
@@ -55,6 +59,16 @@ const projects = [
     image: "/assets/projects/thumb3.png",
     live: "https://modern-bank-app-ebon-omega.vercel.app/",
     github: "https://github.com/solarluiso/modern-bank-app",
+  },
+  {
+    num: "04",
+    category: "fullstack",
+    title: "Product Store App",
+    description: "A dynamic full-stack product management application.",
+    stack: [{ name: "React.js" }, { name: "Node.js" }, { name: "MongoDB" }],
+    image: "/assets/projects/thumb4.png",
+    live: "https://product-store-app-tkmt.onrender.com/",
+    github: "https://github.com/solarluiso/product-store-app",
   },
 ];
 
@@ -85,12 +99,12 @@ const Projects = () => {
                 {/* info */}
                 <div className="flex flex-col gap-2 order-2 xl:order-none xl:pl-[267px]">
                   {/* project category */}
-                  <h2 className="h2 mb-2">
-                    <span className="font-extrabold text-transparent text-outline">
-                      project:{" "}
-                    </span>
-                    {project.title}
-                  </h2>
+                  <div className="flex flex-col xl:flex-row gap-2">
+                    <h3 className="h3 font-extrabold text-transparent text-outline">
+                      {project.category} project:{" "}
+                    </h3>
+                    <h3 className="h3">{project.title}</h3>
+                  </div>
                   {/* project description */}
                   <p className="p">{project.description}</p>
                   {/* stack */}
