@@ -103,14 +103,14 @@ const experience = {
     "Proficient in frontend and backend technologies, working effectively with cross-functional teams and stakeholders.",
   items: [
     {
+      position: "Built a full-stack web application.",
+      duration: "2024",
+      description: "Bootcamp Project",
+    },
+    {
       position: "Contributed to an open-source project.",
       duration: "2024",
       description: "Grammerhub",
-    },
-    {
-      position: "Developed a small business website.",
-      duration: "2023",
-      description: "Freelance",
     },
     {
       position: "Implemented a portfolio website.",
@@ -118,9 +118,9 @@ const experience = {
       description: "Personal Project",
     },
     {
-      position: "Built a full-stack web application.",
-      duration: "2022",
-      description: "Bootcamp Project",
+      position: "Developed a small business website.",
+      duration: "2023",
+      description: "Freelance",
     },
   ],
 };
