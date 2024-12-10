@@ -3,7 +3,6 @@
 import { useRef, useState } from "react";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { fadeIn } from "@/lib/variants";
 import Swal from "sweetalert2";
 
 // components
@@ -31,16 +30,40 @@ const info = [
 
 const Contact = () => {
   const formRef = useRef(null); // Create a reference for the form
-  const [status, setStatus] = useState(""); // Define state for status
 
   async function handleSubmit(event) {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "c83ad2be-7bc5-4273-9457-6524f5deda36");
+    // Check if all fields are filled
+    if (
+      !formData.get("name") ||
+      !formData.get("email") ||
+      !formData.get("message")
+    ) {
+      Swal.fire({
+        title: "Error!",
+        text: "All fields are required.",
+        icon: "error",
+      });
+      return;
+    }
 
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
+    // Validate email format (extra layer)
+    const email = formData.get("email");
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      Swal.fire({
+        title: "Error!",
+        text: "Invalid email format.",
+        icon: "error",
+      });
+      return;
+    }
+
+    // Proceed with form submission
+    formData.append("access_key", "c83ad2be-7bc5-4273-9457-6524f5deda36");
+    const json = JSON.stringify(Object.fromEntries(formData));
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -50,6 +73,7 @@ const Contact = () => {
       },
       body: json,
     });
+
     const result = await response.json();
     if (result.success) {
       Swal.fire({
@@ -58,6 +82,12 @@ const Contact = () => {
         icon: "success",
       });
       formRef.current.reset(); // Reset the form
+    } else {
+      Swal.fire({
+        title: "Error!",
+        text: "Something went wrong. Please try again.",
+        icon: "error",
+      });
     }
   }
 
@@ -111,21 +141,22 @@ const Contact = () => {
               <p className="text-[16px] uppercase text-white/60">
                 Fill out the form below to get in touch:
               </p>
-              <Input name="name" type="text" placeholder="Your name" />
-              <Input name="email" type="email" placeholder="Your email" />
+              <Input name="name" type="text" placeholder="Your name" required />
+              <Input
+                name="email"
+                type="email"
+                placeholder="Your email"
+                required
+              />
               <Textarea
                 name="message"
                 className="h-[200px]"
                 placeholder="Type your message here!"
+                required
               />
               <Button type="submit" size="md" className="max-w-40 uppercase">
                 Send email
               </Button>
-              {status && (
-                <p className="text-[16px] uppercase text-white/60 mt-4">
-                  {status}
-                </p>
-              )}
             </form>
           </div>
         </div>
