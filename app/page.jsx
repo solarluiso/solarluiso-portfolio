@@ -20,15 +20,19 @@ const Home = () => {
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row items-center justify-center xl:gap-[100px] xl:py-[60px]">
+          {/* photo */}
+          <div className="mb-8 xl:mb-0">
+            <Photo />
+          </div>
           {/* text */}
-          <div className="flex flex-col gap-5 order-2 xl:order-none w-auto max-w-[490px] text-center xl:text-left">
+          <div className="flex flex-col gap-5 w-auto max-w-[490px] text-center xl:text-left">
             {/* hello */}
             <motion.div
               variants={fadeIn("down", 0.8)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.2 }}
-              className="max-h-[150px]"
+              className=""
             >
               <h1 className="h1">
                 Hello!
@@ -42,7 +46,7 @@ const Home = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.2 }}
-              className="flex flex-col gap-2 xl:ml-12"
+              className="flex flex-col gap-2"
             >
               <h3 className="h3 text-white/60">Web Developer</h3>
               <p className="p max-w-[312px]">
@@ -56,7 +60,7 @@ const Home = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.2 }}
-              className="h3 xl:ml-24"
+              className="h3"
             >
               Let's create something <br />
               remarkable together!
@@ -86,10 +90,6 @@ const Home = () => {
                 />
               </div>
             </motion.div>
-          </div>
-          {/* photo */}
-          <div className="mb-8 xl:mb-0">
-            <Photo />
           </div>
         </div>
         <Stats />

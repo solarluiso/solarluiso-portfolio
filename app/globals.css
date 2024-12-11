@@ -11,7 +11,7 @@
     @apply font-primary bg-primary text-white leading-loose;
   }
   .h1 {
-    @apply text-[36px] xl:text-[74px] leading-[1.1] font-extrabold uppercase;
+    @apply text-4xl xl:text-6xl leading-[1.1] font-extrabold uppercase;
   }
   .h2 {
     @apply text-[32px] xl:text-[36px] leading-[1.1] font-extrabold uppercase;
