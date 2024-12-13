@@ -11,6 +11,7 @@ import {
 import { motion } from "framer-motion";
 
 // components
+import BackgroundEffect from "@/components/BackgroundEffect";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
@@ -163,6 +164,7 @@ const About = () => {
       transition={{ duration: 1 }}
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-6 xl:items-start"
     >
+      <BackgroundEffect variant="about" />
       <div className="container mx-auto">
         <Tabs
           defaultValue="about"

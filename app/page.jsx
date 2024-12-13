@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "@/lib/variants";
 
 // components
+import BackgroundEffect from "@/components/BackgroundEffect";
 import { Button } from "@/components/ui/button";
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
@@ -18,7 +19,8 @@ const Home = () => {
       transition={{ duration: 1 }}
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0 xl:items-start"
     >
-      <div className="container mx-auto">
+      <BackgroundEffect variant="default" />
+      <div className="container mx-auto max-w-[1280px]">
         <div className="flex flex-col xl:flex-row items-center justify-center xl:gap-[100px] xl:py-[60px]">
           {/* photo */}
           <div className="mb-8 xl:mb-0">
@@ -32,7 +34,6 @@ const Home = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.2 }}
-              className=""
             >
               <h1 className="h1">
                 Hello!
@@ -49,8 +50,8 @@ const Home = () => {
               className="flex flex-col gap-2"
             >
               <h3 className="h3 text-white/60">Web Developer</h3>
-              <p className="p max-w-[312px]">
-                I shape ideas into interactive web experiences, while sipping
+              <p className="p max-w-[312px] text-white/80">
+                I shape ideas into interactive web experiences while sipping
                 coffee on a glorious day.
               </p>
             </motion.div>
@@ -73,7 +74,11 @@ const Home = () => {
               viewport={{ once: false, amount: 0.2 }}
               className="flex flex-col xl:flex-row xl:mt-[5px] items-center gap-8"
             >
-              <a href="/assets/Luis-Solar-CV.pdf" download>
+              <a
+                href="/assets/Luis-Solar-CV.pdf"
+                download
+                aria-label="Download Luiso's CV"
+              >
                 <Button
                   variant="outline"
                   size="lg"

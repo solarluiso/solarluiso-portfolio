@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import Swal from "sweetalert2";
 
 // components
+import BackgroundEffect from "@/components/BackgroundEffect";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
@@ -98,6 +99,7 @@ const Contact = () => {
       transition={{ duration: 1 }}
       className="min-h-[80vh] flex items-center justify-center py-12 xl:items-start"
     >
+      <BackgroundEffect variant="contact" />
       <div className="container mx-auto">
         <div className="w-full flex flex-col xl:flex-row justify-between items-center gap-[30px]">
           {/* text */}

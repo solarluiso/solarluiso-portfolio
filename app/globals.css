@@ -10,18 +10,24 @@
   body {
     @apply font-primary bg-primary text-white leading-loose;
   }
+
+  /* Typography */
   .h1 {
     @apply text-4xl xl:text-6xl leading-[1.1] font-extrabold uppercase;
   }
+
   .h2 {
     @apply text-[32px] xl:text-[36px] leading-[1.1] font-extrabold uppercase;
   }
+
   .h3 {
     @apply text-[20px] xl:text-[24px] leading-[1.1] font-extrabold uppercase;
   }
+
   .p {
     @apply text-base text-white/60 font-light;
   }
+
   .text-outline {
     -webkit-text-stroke: 1px #ffffff;
   }
