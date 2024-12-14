@@ -10,7 +10,6 @@ import Image from "@/node_modules/next/image";
 import { motion } from "framer-motion";
 
 // components
-import BackgroundEffect from "@/components/BackgroundEffect";
 import {
   Tooltip,
   TooltipContent,
@@ -90,7 +89,6 @@ const Projects = () => {
       transition={{ duration: 1 }}
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-6 xl:items-start"
     >
-      <BackgroundEffect variant="projects" />
       <div className="container mx-auto">
         <div className="flex flex-col items-center xl:justify-center gap-[60px] xl:gap-0">
           {/* text */}

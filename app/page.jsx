@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { fadeIn } from "@/lib/variants";
 
 // components
-import BackgroundEffect from "@/components/BackgroundEffect";
 import { Button } from "@/components/ui/button";
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
@@ -19,7 +18,6 @@ const Home = () => {
       transition={{ duration: 1 }}
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0 xl:items-start"
     >
-      <BackgroundEffect variant="default" />
       <div className="container mx-auto max-w-[1280px]">
         <div className="flex flex-col xl:flex-row items-center justify-center xl:gap-[100px] xl:py-[60px]">
           {/* photo */}
