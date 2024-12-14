@@ -101,7 +101,7 @@ const Contact = () => {
       <div className="container mx-auto">
         <div className="w-full flex flex-col xl:flex-row justify-between items-center gap-[30px]">
           {/* text */}
-          <div className="w-full max-w-[580px] xl:w-[50%] flex flex-col gap-[30px]">
+          <div className="w-full max-w-[580px] xl:w-[50%] flex flex-col gap-6">
             {/* message */}
             <div className="flex flex-col justify-center items-center gap-2 rounded-xl p-[30px] border border-accent/10 border-dashed">
               <h3 className="h3 text-center w-full">Let's connect!</h3>
@@ -112,7 +112,7 @@ const Contact = () => {
             </div>
             {/* info */}
             <div className="flex flex-col items-center justify-center rounded-xl p-10 border border-accent/10 border-dashed">
-              <ul className="flex flex-col gap-10">
+              <ul className="flex flex-col gap-[34px]">
                 {info.map((item, index) => {
                   return (
                     <li key={index} className="flex items-center gap-6">
