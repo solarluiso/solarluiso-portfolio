@@ -13,7 +13,7 @@
 
   /* Typography */
   .h1 {
-    @apply text-4xl xl:text-6xl leading-[1.1] font-extrabold uppercase;
+    @apply text-[36px] xl:text-[40px] leading-[1.1] font-extrabold uppercase;
   }
 
   .h2 {

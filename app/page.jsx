@@ -16,10 +16,11 @@ const Home = () => {
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
-      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0 xl:items-start"
+      className="min-h-[80vh] flex flex-col justify-center xl:justify-between py-12 xl:py-0"
     >
-      <div className="container mx-auto max-w-[1280px]">
-        <div className="flex flex-col xl:flex-row items-center justify-center xl:gap-[100px] xl:py-[60px]">
+      <div className="container mx-auto max-w-[1280px] flex-1 flex items-center">
+        {/* main content */}
+        <div className="flex flex-col xl:flex-row items-center justify-center xl:gap-[100px] w-full">
           {/* photo */}
           <div className="mb-8 xl:mb-0">
             <Photo />
@@ -70,7 +71,7 @@ const Home = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.2 }}
-              className="flex flex-col xl:flex-row xl:mt-[5px] items-center gap-8"
+              className="flex flex-col xl:mt-[5px] items-center xl:items-start gap-8"
             >
               <a
                 href="/assets/Luis-Solar-CV.pdf"
@@ -86,7 +87,7 @@ const Home = () => {
                   <FiDownload className="text-xl" />
                 </Button>
               </a>
-              <div className="mb-8 xl:mb-0">
+              <div className="mb-8 xl:hidden">
                 <Social
                   containerStyles="flex gap-6"
                   iconStyles="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"
@@ -95,6 +96,9 @@ const Home = () => {
             </motion.div>
           </div>
         </div>
+      </div>
+      {/* Stats at the bottom */}
+      <div className="w-full">
         <Stats />
       </div>
     </motion.div>
