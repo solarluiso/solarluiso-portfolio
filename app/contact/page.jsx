@@ -96,12 +96,12 @@ const Contact = () => {
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
-      className="min-h-[80vh] flex items-center justify-center py-12 xl:items-start"
+      className="min-h-[80vh] flex items-center justify-center py-12"
     >
       <div className="container mx-auto">
-        <div className="w-full flex flex-col xl:flex-row justify-between items-center gap-[30px]">
+        <div className="w-full flex flex-col xl:flex-row justify-center items-center gap-[30px]">
           {/* text */}
-          <div className="w-full max-w-[580px] xl:w-[50%] flex flex-col gap-6">
+          <div className="w-full max-w-[500px] flex flex-col gap-6">
             {/* message */}
             <div className="flex flex-col justify-center items-center gap-2 rounded-xl p-[30px] border border-accent/10 border-dashed">
               <h3 className="h3 text-center w-full">Let's connect!</h3>
@@ -111,7 +111,7 @@ const Contact = () => {
               </p>
             </div>
             {/* info */}
-            <div className="flex flex-col items-center justify-center rounded-xl p-10 border border-accent/10 border-dashed">
+            <div className="flex flex-col items-center justify-center rounded-xl p-8 border border-accent/10 border-dashed">
               <ul className="flex flex-col gap-[34px]">
                 {info.map((item, index) => {
                   return (
@@ -132,11 +132,11 @@ const Contact = () => {
             </div>
           </div>
           {/* form */}
-          <div className="w-full max-w-[580px] xl:w-[50%]">
+          <div className="w-full max-w-[500px]">
             <form
               ref={formRef} // Attach the reference to the form
               onSubmit={handleSubmit}
-              className="flex flex-col gap-6 p-10 bg-secondary rounded-xl"
+              className="flex flex-col gap-6 p-8 bg-secondary rounded-xl"
             >
               <p className="text-[16px] uppercase text-white/60">
                 Fill out the form below to get in touch:
