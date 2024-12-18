@@ -87,17 +87,17 @@ const Projects = () => {
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
-      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-6 xl:items-start"
+      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-6"
     >
       <div className="container mx-auto">
-        <div className="flex flex-col items-center xl:justify-center gap-[60px] xl:gap-0">
+        <div className="flex flex-col items-center justify-center gap-[60px] xl:gap-0">
           {/* text */}
           <div className="w-full flex justify-start xl:justify-center max-w-[640px] xl:max-w-none order-2 xl:order-none">
             <div className="w-full flex flex-col gap-[30px] xl:gap-[18px]">
               {/* info + num */}
               <div className="flex flex-col xl:flex-row justify-between items-start xl:items-center gap-[30px]">
                 {/* info */}
-                <div className="flex flex-col gap-2 order-2 xl:order-none xl:pl-[267px]">
+                <div className="flex flex-col gap-2 order-2 xl:order-none">
                   {/* project category */}
                   <div className="flex flex-col xl:flex-row gap-2">
                     <h3 className="h3 font-extrabold text-transparent text-outline">
