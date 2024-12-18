@@ -161,12 +161,12 @@ const About = () => {
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
-      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-6 xl:items-start"
+      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
     >
       <div className="container mx-auto">
         <Tabs
           defaultValue="about"
-          className="flex flex-col xl:flex-row gap-[60px]"
+          className="flex flex-col xl:flex-row gap-[60px] xl:h-[582px]"
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
             <TabsTrigger value="about">About</TabsTrigger>
