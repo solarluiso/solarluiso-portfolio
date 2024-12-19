@@ -8,11 +8,12 @@ const Photo = () => {
     <div className="relative flex items-center justify-center w-full h-full">
       {/* Profile Image */}
       <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
+        initial={{ opacity: 0, scale: 0, rotate: 0 }}
         animate={{
           opacity: 1,
           scale: 1,
-          transition: { duration: 0.6, ease: "easeOut" },
+          rotate: 360,
+          transition: { delay: 1, duration: 1.5, ease: "easeInOut" },
         }}
         className="relative z-10 w-[250px] h-[250px] xl:w-[400px] xl:h-[400px]"
       >
@@ -46,9 +47,10 @@ const Photo = () => {
             rotate: [0, 360],
           }}
           transition={{
-            duration: 20,
+            duration: 30,
             repeat: Infinity,
-            ease: "easeInOut",
+            repeatType: "reverse",
+            ease: "linear",
           }}
         />
       </motion.svg>
