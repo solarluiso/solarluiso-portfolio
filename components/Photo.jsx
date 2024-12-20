@@ -8,12 +8,10 @@ const Photo = () => {
     <div className="relative flex items-center justify-center w-full h-full">
       {/* Profile Image */}
       <motion.div
-        initial={{ opacity: 0, scale: 0, rotate: 0 }}
+        initial={{ opacity: 0 }}
         animate={{
           opacity: 1,
-          scale: 1,
-          rotate: 360,
-          transition: { delay: 1, duration: 1.5, ease: "easeInOut" },
+          transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
         }}
         className="relative z-10 w-[250px] h-[250px] xl:w-[400px] xl:h-[400px]"
       >
@@ -30,9 +28,9 @@ const Photo = () => {
 
       {/* Circular Animation */}
       <motion.svg
-        className="absolute w-[260px] h-[260px] xl:w-[410px] xl:h-[410px]"
+        className="absolute w-[258px] h-[258px] xl:w-[408px] xl:h-[408px]"
+        fill="transparent"
         viewBox="0 0 506 506"
-        fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
         <motion.circle
@@ -41,16 +39,20 @@ const Photo = () => {
           r="250"
           stroke="#57ebd7"
           strokeWidth="4"
-          strokeDasharray="15 120 25 25"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          initial={{
+            strokeDasharray: "24 10 0 0",
+          }}
           animate={{
             strokeDasharray: ["15 120 25 25", "16 25 92 72", "4 250 22 22"],
-            rotate: [0, 360],
+            rotate: [120, 360],
           }}
           transition={{
-            duration: 30,
+            duration: 20,
             repeat: Infinity,
             repeatType: "reverse",
-            ease: "linear",
+            ease: "easeInOut",
           }}
         />
       </motion.svg>
