@@ -1,11 +1,12 @@
 "use client";
 
-import { FaJs, FaReact, FaNodeJs } from "@/node_modules/react-icons/fa";
+import { FaReact, FaNodeJs } from "@/node_modules/react-icons/fa";
 import {
   SiTailwindcss,
   SiNextdotjs,
   SiExpress,
-  SiMongodb,
+  SiPostgresql,
+  SiFirebase,
   SiDocker,
 } from "react-icons/si";
 import { motion } from "framer-motion";
@@ -38,14 +39,13 @@ const about = {
       fieldName: "Phone",
       fieldValue: "(+1) 786 825 4670",
     },
-
     {
       fieldName: "Email",
       fieldValue: "solarluiso@gmail.com",
     },
     {
       fieldName: "Location",
-      fieldValue: "Washington DC, USA",
+      fieldValue: "Washington, DC, USA",
     },
     {
       fieldName: "Languages",
@@ -61,10 +61,6 @@ const skills = {
     "Adept in the JavaScript ecosystem, I work with modern frameworks and tools to build fast and visually engaging web applications that deliver seamless user experiences.",
   skillList: [
     {
-      icon: <FaJs />,
-      name: "JavaScript",
-    },
-    {
       icon: <FaReact />,
       name: "React.js",
     },
@@ -77,6 +73,10 @@ const skills = {
       name: "TailwindCSS",
     },
     {
+      icon: <SiFirebase />,
+      name: "Firebase",
+    },
+    {
       icon: <FaNodeJs />,
       name: "Node.js",
     },
@@ -85,8 +85,8 @@ const skills = {
       name: "Express.js",
     },
     {
-      icon: <SiMongodb />,
-      name: "MongoDB",
+      icon: <SiPostgresql />,
+      name: "PostgreSQL",
     },
     {
       icon: <SiDocker />,
@@ -195,7 +195,7 @@ const About = () => {
                           <span className="text-accent uppercase">
                             {item.fieldName}
                           </span>
-                          <h3 className="text-xl text-center lg:text-left">
+                          <h3 className="text-base uppercase">
                             {item.fieldValue}
                           </h3>
                         </li>
