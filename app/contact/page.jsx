@@ -101,7 +101,7 @@ const Contact = () => {
       <div className="container mx-auto">
         <div className="w-full flex flex-col xl:flex-row justify-center items-center gap-[30px]">
           {/* text */}
-          <div className="w-full max-w-[500px] flex flex-col gap-6">
+          <div className="w-full h-[536px] max-w-[500px] flex flex-col justify-between gap-6">
             {/* message */}
             <div className="flex flex-col justify-center items-center gap-2 rounded-xl p-[30px] border border-accent/10 border-dashed">
               <h3 className="h3 text-center w-full">Let's connect!</h3>
@@ -111,17 +111,17 @@ const Contact = () => {
               </p>
             </div>
             {/* info */}
-            <div className="flex flex-col items-center justify-center rounded-xl p-8 border border-accent/10 border-dashed">
-              <ul className="flex flex-col gap-[34px]">
+            <div className="h-full flex flex-col items-center justify-center rounded-xl p-8 border border-accent/10 border-dashed">
+              <ul className="flex flex-col gap-[30px]">
                 {info.map((item, index) => {
                   return (
                     <li key={index} className="flex items-center gap-6">
-                      <div className="w-[52px] h-[52px] xl:w-[70px] xl:h-[70px] bg-secondary text-accent rounded-md flex items-center justify-center">
+                      <div className="w-[52px] h-[52px] bg-secondary text-accent rounded-md flex items-center justify-center">
                         <div className="text-[28px]">{item.icon}</div>
                       </div>
                       <div className="flex-1">
                         <p className="uppercase text-white">{item.title}</p>
-                        <h3 className="font-secondary text-lg text-white/60">
+                        <h3 className="text-base uppercase text-white/60">
                           {item.description}
                         </h3>
                       </div>
