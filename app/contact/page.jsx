@@ -101,7 +101,7 @@ const Contact = () => {
       <div className="container mx-auto">
         <div className="w-full flex flex-col xl:flex-row justify-center items-center gap-[30px]">
           {/* text */}
-          <div className="w-full h-[536px] max-w-[500px] flex flex-col justify-between gap-6">
+          <div className="w-full h-[532px] max-w-[500px] flex flex-col justify-between gap-6">
             {/* message */}
             <div className="flex flex-col justify-center items-center gap-2 rounded-xl p-[30px] border border-accent/10 border-dashed">
               <h3 className="h3 text-center w-full">Let's connect!</h3>
@@ -154,7 +154,7 @@ const Contact = () => {
                 placeholder="Type your message here!"
                 required
               />
-              <Button type="submit" size="md" className="max-w-40 uppercase">
+              <Button type="submit" className="max-w-40 uppercase">
                 Send email
               </Button>
             </form>
