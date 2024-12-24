@@ -70,6 +70,17 @@ const projects = [
     live: "https://product-store-app-tkmt.onrender.com/",
     github: "https://github.com/solarluiso/product-store-app",
   },
+  {
+    num: "05",
+    category: "fullstack",
+    title: "Mood Mapper",
+    description:
+      "A web application to track and analyze your mood throughout the days.",
+    stack: [{ name: "Next.js" }, { name: "TailwindCSS" }, { name: "Firebase" }],
+    image: "/assets/projects/thumb5.png",
+    live: "https://mood-mapper.netlify.app/",
+    github: "https://github.com/solarluiso/mood-tracker",
+  },
 ];
 
 const Projects = () => {
