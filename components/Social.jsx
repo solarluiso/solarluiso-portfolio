@@ -1,4 +1,5 @@
 import { FaLinkedin, FaGithub, FaDiscord } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const socials = [
   { icon: <FaLinkedin />, path: "https://www.linkedin.com/in/solarluiso/" },
@@ -10,15 +11,21 @@ const Social = ({ containerStyles, iconStyles }) => {
   return (
     <div className={containerStyles}>
       {socials.map((item, index) => (
-        <a
+        <motion.a
           key={index}
           href={item.path}
           className={iconStyles}
           target="_blank"
           rel="noopener noreferrer"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            delay: 3 + index * 0.3,
+            duration: 1,
+          }}
         >
           {item.icon}
-        </a>
+        </motion.a>
       ))}
     </div>
   );
