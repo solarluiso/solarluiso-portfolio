@@ -22,6 +22,27 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
+    category: "fullstack",
+    title: "Product Store App",
+    description: "A dynamic full-stack product management application.",
+    stack: [{ name: "React.js" }, { name: "Node.js" }, { name: "MongoDB" }],
+    image: "/assets/projects/thumb4.png",
+    live: "https://product-store-app-tkmt.onrender.com/",
+    github: "https://github.com/solarluiso/product-store-app",
+  },
+  {
+    num: "02",
+    category: "fullstack",
+    title: "Mood Mapper",
+    description:
+      "A web application to track and analyze your mood throughout the days.",
+    stack: [{ name: "Next.js" }, { name: "TailwindCSS" }, { name: "Firebase" }],
+    image: "/assets/projects/thumb5.png",
+    live: "https://mood-mapper.netlify.app/",
+    github: "https://github.com/solarluiso/mood-tracker",
+  },
+  {
+    num: "03",
     category: "frontend",
     title: "Focus",
     description:
@@ -36,7 +57,7 @@ const projects = [
     github: "https://github.com/solarluiso/focus",
   },
   {
-    num: "02",
+    num: "04",
     category: "frontend",
     title: "Fit physique",
     description: "A fitness-focused platform to track workouts and progress.",
@@ -50,7 +71,7 @@ const projects = [
     github: "https://github.com/solarluiso/fitphysique",
   },
   {
-    num: "03",
+    num: "05",
     category: "frontend",
     title: "Modern bank app",
     description:
@@ -59,27 +80,6 @@ const projects = [
     image: "/assets/projects/thumb3.png",
     live: "https://modern-bank-app-ebon-omega.vercel.app/",
     github: "https://github.com/solarluiso/modern-bank-app",
-  },
-  {
-    num: "04",
-    category: "fullstack",
-    title: "Product Store App",
-    description: "A dynamic full-stack product management application.",
-    stack: [{ name: "React.js" }, { name: "Node.js" }, { name: "MongoDB" }],
-    image: "/assets/projects/thumb4.png",
-    live: "https://product-store-app-tkmt.onrender.com/",
-    github: "https://github.com/solarluiso/product-store-app",
-  },
-  {
-    num: "05",
-    category: "fullstack",
-    title: "Mood Mapper",
-    description:
-      "A web application to track and analyze your mood throughout the days.",
-    stack: [{ name: "Next.js" }, { name: "TailwindCSS" }, { name: "Firebase" }],
-    image: "/assets/projects/thumb5.png",
-    live: "https://mood-mapper.netlify.app/",
-    github: "https://github.com/solarluiso/mood-tracker",
   },
 ];
 
