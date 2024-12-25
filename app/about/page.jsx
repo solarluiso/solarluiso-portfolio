@@ -166,7 +166,7 @@ const About = () => {
       <div className="container mx-auto">
         <Tabs
           defaultValue="about"
-          className="flex flex-col xl:flex-row gap-[60px] xl:h-[582px]"
+          className="flex flex-col xl:flex-row gap-[60px] xl:px-[30px] xl:h-[582px]"
         >
           <TabsList className="flex flex-col w-full max-w-[360px] mx-auto xl:mx-0 gap-6">
             <TabsTrigger value="about">About</TabsTrigger>
@@ -181,7 +181,7 @@ const About = () => {
             <TabsContent value="about" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <div className="flex flex-col gap-4">
-                  <h2 className="h2">{about.title}</h2>
+                  <h1 className="h1">{about.title}</h1>
                   <p className="p">{about.description}</p>
                 </div>
                 <ScrollArea className="h-[400px]">
@@ -210,7 +210,7 @@ const About = () => {
             <TabsContent value="skills" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <div className="flex flex-col gap-4">
-                  <h2 className="h2">{skills.title}</h2>
+                  <h1 className="h1">{skills.title}</h1>
                   <p className="p">{skills.description}</p>
                 </div>
                 <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
@@ -245,7 +245,7 @@ const About = () => {
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <div className="flex flex-col gap-4">
-                  <h2 className="h2">{experience.title}</h2>
+                  <h1 className="h1">{experience.title}</h1>
                   <p className="p">{experience.description}</p>
                 </div>
                 <ScrollArea className="h-[400px]">
@@ -257,7 +257,7 @@ const About = () => {
                           className="bg-secondary h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start"
                         >
                           <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+                          <h3 className="max-w-[260px] min-h-[60px] flex items-center justify-center">
                             {item.position}
                           </h3>
                           <div className="flex items-center gap-3">
@@ -277,7 +277,7 @@ const About = () => {
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <div className="flex flex-col gap-4">
-                  <h2 className="h2">{education.title}</h2>
+                  <h1 className="h1">{education.title}</h1>
                   <p className="p">{education.description}</p>
                 </div>
                 <ScrollArea className="h-[400px]">
@@ -289,7 +289,7 @@ const About = () => {
                           className="bg-secondary h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start"
                         >
                           <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+                          <h3 className="max-w-[260px] min-h-[60px] flex items-center justify-center">
                             {item.degree}
                           </h3>
                           <div className="flex items-center gap-3">
