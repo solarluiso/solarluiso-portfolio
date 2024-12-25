@@ -26,7 +26,7 @@ const Home = () => {
             <Photo />
           </div>
           {/* text */}
-          <div className="flex flex-col gap-6 w-auto max-w-[490px] text-center xl:text-left">
+          <div className="flex flex-col gap-4 w-auto max-w-[400px] text-center xl:text-left">
             {/* hello */}
             <motion.div
               variants={fadeIn("down", 1)}
@@ -46,12 +46,11 @@ const Home = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.2 }}
-              className="flex flex-col gap-2"
+              className="p text-white/80"
             >
-              <h3 className="h3 text-white/60">Web Developer</h3>
-              <p className="p max-w-[312px] text-white/80">
-                I shape ideas into interactive web experiences while sipping
-                coffee on a glorious day.
+              <p>
+                The kind of developer who shapes ideas into interactive web
+                experiences, while sipping coffee on a glorious day.
               </p>
             </motion.div>
             {/* take action */}
@@ -60,13 +59,12 @@ const Home = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.2 }}
-              className="h3"
+              className="h3 leading-normal"
             >
-              Let's create something <br />
-              remarkable together!
+              Let's build something extraordinary together!
             </motion.h3>
             {/* btn and socials */}
-            <div className="flex flex-col xl:flex-row items-center justify-center xl:items-center xl:justify-start gap-6">
+            <div className="flex flex-col xl:flex-row items-center justify-center xl:items-center xl:justify-start gap-6 pt-2">
               <motion.a
                 variants={fadeIn("down", 0.4)}
                 initial="hidden"

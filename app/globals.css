@@ -8,24 +8,24 @@
 
 @layer base {
   body {
-    @apply font-primary bg-primary text-white leading-loose;
+    @apply font-primary bg-primary text-white;
   }
 
   /* Typography */
   .h1 {
-    @apply text-[36px] xl:text-[40px] leading-[1.1] font-extrabold uppercase;
+    @apply text-[36px] xl:text-[40px] font-extrabold uppercase leading-tight;
   }
 
   .h2 {
-    @apply text-[32px] xl:text-[36px] leading-[1.1] font-extrabold uppercase;
+    @apply text-[32px] xl:text-[36px] font-extrabold uppercase leading-tight;
   }
 
   .h3 {
-    @apply text-[20px] xl:text-[24px] leading-[1.1] font-extrabold uppercase;
+    @apply text-[20px] xl:text-[24px] font-extrabold uppercase leading-tight;
   }
 
   .p {
-    @apply text-base text-white/60 font-light;
+    @apply text-base text-white/60 font-light leading-relaxed;
   }
 
   .text-outline {
