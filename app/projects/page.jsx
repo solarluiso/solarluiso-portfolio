@@ -46,7 +46,7 @@ const projects = [
   {
     num: "04",
     category: "frontend",
-    title: "Fit physique",
+    title: "Fit Physique",
     description: "A fitness-focused platform to track workouts and progress.",
     stack: [
       { name: "Next.js" },
@@ -60,7 +60,7 @@ const projects = [
   {
     num: "05",
     category: "frontend",
-    title: "Modern bank app",
+    title: "Modern Bank App",
     description:
       "An innovative banking application with a modern user interface.",
     stack: [{ name: "React.js" }, { name: "TailwindCSS" }, { name: "Vite" }],
@@ -79,7 +79,7 @@ const Projects = () => {
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-6"
     >
       <div className="container mx-auto">
-        <h1 className="h1 mb-8 text-center">My Projects</h1>
+        <h3 className="h3 mb-8 text-accent text-center">My Projects</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
           {projects.map((project, index) => (
             <div

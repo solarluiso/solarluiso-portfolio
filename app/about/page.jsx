@@ -180,8 +180,8 @@ const About = () => {
             {/* about */}
             <TabsContent value="about" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <div className="flex flex-col gap-4">
-                  <h1 className="h1">{about.title}</h1>
+                <div className="flex flex-col gap-2">
+                  <h3 className="h3">{about.title}</h3>
                   <p className="p">{about.description}</p>
                 </div>
                 <ScrollArea className="h-[400px]">
@@ -195,7 +195,7 @@ const About = () => {
                           <span className="text-accent uppercase">
                             {item.fieldName}
                           </span>
-                          <h3 className="text-base uppercase">
+                          <h3 className="text-base uppercase text-white/80">
                             {item.fieldValue}
                           </h3>
                         </li>
@@ -209,8 +209,8 @@ const About = () => {
             {/* skills */}
             <TabsContent value="skills" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <div className="flex flex-col gap-4">
-                  <h1 className="h1">{skills.title}</h1>
+                <div className="flex flex-col gap-2">
+                  <h3 className="h3">{skills.title}</h3>
                   <p className="p">{skills.description}</p>
                 </div>
                 <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
@@ -220,7 +220,7 @@ const About = () => {
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
                             <TooltipTrigger className="w-full h-[150px] bg-secondary rounded-xl flex flex-col justify-center items-center group">
-                              <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                              <div className="text-5xl group-hover:text-accent transition-all duration-300">
                                 {skill.icon}
                               </div>
                               {/* Display the skill name directly on smaller screens */}
@@ -244,8 +244,8 @@ const About = () => {
             {/* experience */}
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <div className="flex flex-col gap-4">
-                  <h1 className="h1">{experience.title}</h1>
+                <div className="flex flex-col gap-2">
+                  <h3 className="h3">{experience.title}</h3>
                   <p className="p">{experience.description}</p>
                 </div>
                 <ScrollArea className="h-[400px]">
@@ -276,8 +276,8 @@ const About = () => {
             {/* education */}
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <div className="flex flex-col gap-4">
-                  <h1 className="h1">{education.title}</h1>
+                <div className="flex flex-col gap-2">
+                  <h3 className="h3">{education.title}</h3>
                   <p className="p">{education.description}</p>
                 </div>
                 <ScrollArea className="h-[400px]">
