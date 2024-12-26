@@ -103,7 +103,7 @@ const Contact = () => {
           {/* text */}
           <div className="w-full h-[524px] max-w-[500px] flex flex-col justify-between gap-6">
             {/* message */}
-            <div className="flex flex-col justify-center items-center gap-2 rounded-xl p-[30px] bg-black/20 text-white">
+            <div className="flex flex-col justify-center items-center gap-2 rounded-xl p-[30px] bg-black/10 text-white">
               <h3 className="h3 text-center w-full">Let's connect!</h3>
               <p className="p max-w-[336px] mx-auto text-center">
                 Reach out to discuss opportunities, projects, or simply to start
@@ -111,7 +111,7 @@ const Contact = () => {
               </p>
             </div>
             {/* info */}
-            <div className="h-full flex flex-col items-center justify-center rounded-xl p-8 bg-black/20 text-white">
+            <div className="h-full flex flex-col items-center justify-center rounded-xl p-8 bg-black/10 text-white">
               <ul className="flex flex-col gap-[30px]">
                 {info.map((item, index) => {
                   return (
