@@ -13,7 +13,7 @@ const Photo = () => {
           opacity: 1,
           transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
         }}
-        className="relative z-10 w-[250px] h-[250px] xl:w-[400px] xl:h-[400px]"
+        className="relative z-10 w-[250px] h-[250px] xl:w-[380px] xl:h-[380px]"
       >
         <Image
           src="/assets/photo.png"
@@ -28,7 +28,7 @@ const Photo = () => {
 
       {/* Circular Animation */}
       <motion.svg
-        className="absolute w-[258px] h-[258px] xl:w-[408px] xl:h-[408px]"
+        className="absolute w-[258px] h-[258px] xl:w-[388px] xl:h-[388px]"
         fill="transparent"
         viewBox="0 0 506 506"
         xmlns="http://www.w3.org/2000/svg"

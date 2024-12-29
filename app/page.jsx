@@ -26,7 +26,7 @@ const Home = () => {
             <Photo />
           </div>
           {/* text */}
-          <div className="flex flex-col gap-4 w-auto max-w-[400px] text-center xl:text-left">
+          <div className="flex flex-col gap-4 w-auto max-w-[380px] text-center xl:text-left">
             {/* hello */}
             <motion.div
               variants={fadeIn("down", 1)}
