@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Swal from "sweetalert2";
@@ -15,16 +15,20 @@ const info = [
     icon: <FaPhoneAlt />,
     title: "Phone",
     description: "(+1) 786 825 4670",
+    action: () => (window.location.href = "tel:+17868254670"),
   },
   {
     icon: <FaEnvelope />,
     title: "Email",
     description: "solarluiso@gmail.com",
+    action: () => (window.location.href = "mailto:solarluiso@gmail.com"),
   },
   {
     icon: <FaMapMarkerAlt />,
     title: "Location",
     description: "Washington, DC",
+    action: () =>
+      window.open("https://www.google.com/maps?q=Washington+DC", "_blank"),
   },
 ];
 
@@ -116,7 +120,10 @@ const Contact = () => {
                 {info.map((item, index) => {
                   return (
                     <li key={index} className="flex items-center gap-6">
-                      <div className="w-12 h-12 bg-secondary text-accent rounded-full flex items-center justify-center">
+                      <div
+                        className="w-12 h-12 bg-secondary text-accent rounded-full flex items-center justify-center cursor-pointer hover:bg-accent hover:text-primary transition-all duration-500"
+                        onClick={item.action}
+                      >
                         <div className="text-xl">{item.icon}</div>
                       </div>
                       <div className="flex-1">
