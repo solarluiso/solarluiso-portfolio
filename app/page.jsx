@@ -35,9 +35,9 @@ const Home = () => {
               viewport={{ once: false, amount: 0.2 }}
             >
               <h1 className="h1">
-                Hello!
+                Hello,
                 <br />
-                I'm <span className="text-accent">Luiso</span>
+                I'm <span className="text-accent">Luiso!</span>
               </h1>
             </motion.div>
             {/* bio */}
@@ -49,7 +49,7 @@ const Home = () => {
               className="p text-white/80"
             >
               <p>
-                The kind of developer who shapes ideas into interactive web
+                A dedicated developer who shapes ideas into interactive web
                 experiences, while sipping coffee on a glorious day.
               </p>
             </motion.div>
