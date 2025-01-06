@@ -31,7 +31,7 @@ const projects = [
   {
     num: "03",
     category: "frontend",
-    title: "Focus",
+    title: "E-commerce Store",
     description:
       "A responsive e-commerce store to browse, view, and favorite products.",
     stack: [{ name: "React.js" }, { name: "TailwindCSS" }, { name: "Vite" }],
