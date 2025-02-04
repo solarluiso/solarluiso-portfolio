@@ -43,8 +43,7 @@ const projects = [
     num: "04",
     category: "frontend",
     title: "Focus",
-    description:
-      "A sleek web application designed to enhance productivity and focus.",
+    description: "A sleek website designed to enhance productivity and focus.",
     stack: [
       { name: "Next.js" },
       { name: "TailwindCSS" },
@@ -72,8 +71,7 @@ const projects = [
     num: "06",
     category: "frontend",
     title: "Modern Bank App",
-    description:
-      "An innovative banking application with a modern user interface.",
+    description: "An innovative banking website with a modern user interface.",
     stack: [{ name: "React.js" }, { name: "TailwindCSS" }, { name: "Vite" }],
     image: "/assets/projects/thumb6.png",
     live: "https://modern-bank-app-ebon-omega.vercel.app/",
