@@ -132,8 +132,8 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <div className="w-[40px] h-[40px] rounded-full bg-white/5 flex justify-center items-center group">
-                      <BsArrowUpRight className="text-white text-xl group-hover:text-accent" />
+                    <div className="w-10 h-10 bg-secondary text-accent rounded-full flex items-center justify-center cursor-pointer hover:bg-accent hover:text-primary transition-all duration-500">
+                      <BsArrowUpRight className="text-xl" />
                     </div>
                   </Link>
                   <Link
@@ -141,8 +141,8 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <div className="w-[40px] h-[40px] rounded-full bg-white/5 flex justify-center items-center group">
-                      <BsGithub className="text-white text-xl group-hover:text-accent" />
+                    <div className="w-10 h-10 bg-secondary text-accent rounded-full flex items-center justify-center cursor-pointer hover:bg-accent hover:text-primary transition-all duration-500">
+                      <BsGithub className="text-xl" />
                     </div>
                   </Link>
                 </div>
