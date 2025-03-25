@@ -100,25 +100,25 @@ const experience = {
   icon: "/assets/about/badge.svg",
   title: "My experience",
   description:
-    "Proficient in frontend and backend technologies, working effectively with cross-functional teams and stakeholders.",
+    "Skilled in both frontend and backend technologies, collaborating effectively with cross-functional teams and stakeholders.",
   items: [
     {
-      position: "Built a full-stack web application.",
+      position: "Collaborating with an Agile Team",
+      duration: "2025",
+      description: "Chingu Voyage",
+    },
+    {
+      position: "Full-stack Web Application Development",
       duration: "2024",
       description: "Bootcamp Project",
     },
     {
-      position: "Contributed to an open-source project.",
+      position: "Frontend Development in Open-Source Team",
       duration: "2024",
       description: "Grammerhub",
     },
     {
-      position: "Implemented a portfolio website.",
-      duration: "2023",
-      description: "Personal Project",
-    },
-    {
-      position: "Developed a small business website.",
+      position: "Small Business Website Development",
       duration: "2023",
       description: "Freelance",
     },
