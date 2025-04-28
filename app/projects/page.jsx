@@ -10,6 +10,17 @@ const projects = [
   {
     num: "01",
     category: "fullstack",
+    title: "AiQ",
+    description:
+      "A web application designed to help users craft high-quality AI prompts.",
+    stack: [{ name: "React.js" }, { name: "Firebase" }, { name: "Vite" }],
+    image: "/assets/projects/thumb6.png",
+    live: "https://getaiq.netlify.app/",
+    github: "https://github.com/chingu-voyages/V54-tier2-team-24",
+  },
+  {
+    num: "02",
+    category: "fullstack",
     title: "Product Store App",
     description: "A dynamic full-stack product management application.",
     stack: [{ name: "React.js" }, { name: "Node.js" }, { name: "MongoDB" }],
@@ -18,7 +29,7 @@ const projects = [
     github: "https://github.com/solarluiso/product-store-app",
   },
   {
-    num: "02",
+    num: "03",
     category: "fullstack",
     title: "Mood Mapper",
     description:
@@ -29,7 +40,7 @@ const projects = [
     github: "https://github.com/solarluiso/mood-tracker",
   },
   {
-    num: "03",
+    num: "04",
     category: "frontend",
     title: "E-commerce Store",
     description:
@@ -40,7 +51,7 @@ const projects = [
     github: "https://github.com/solarluiso/ecommerce",
   },
   {
-    num: "04",
+    num: "05",
     category: "frontend",
     title: "Focus",
     description: "A sleek website designed to enhance productivity and focus.",
@@ -54,7 +65,7 @@ const projects = [
     github: "https://github.com/solarluiso/focus",
   },
   {
-    num: "05",
+    num: "06",
     category: "frontend",
     title: "Fit Physique",
     description: "A fitness-focused platform to track workouts and progress.",
@@ -66,16 +77,6 @@ const projects = [
     image: "/assets/projects/thumb5.png",
     live: "https://fitphysique-pi.vercel.app/",
     github: "https://github.com/solarluiso/fitphysique",
-  },
-  {
-    num: "06",
-    category: "frontend",
-    title: "Modern Bank App",
-    description: "An innovative banking website with a modern user interface.",
-    stack: [{ name: "React.js" }, { name: "TailwindCSS" }, { name: "Vite" }],
-    image: "/assets/projects/thumb6.png",
-    live: "https://modern-bank-app-ebon-omega.vercel.app/",
-    github: "https://github.com/solarluiso/modern-bank-app",
   },
 ];
 
