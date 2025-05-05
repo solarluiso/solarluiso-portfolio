@@ -195,7 +195,7 @@ const About = () => {
                           <span className="text-accent uppercase">
                             {item.fieldName}
                           </span>
-                          <h3 className="text-base uppercase text-white/80">
+                          <h3 className="text-base tracking-tight text-white/80">
                             {item.fieldValue}
                           </h3>
                         </li>
@@ -213,7 +213,7 @@ const About = () => {
                   <h3 className="h3">{skills.title}</h3>
                   <p className="p">{skills.description}</p>
                 </div>
-                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                <ul className="grid grid-cols-2 md:grid-cols-4 gap-4 xl:gap-[30px]">
                   {skills.skillList.map((skill, index) => {
                     return (
                       <li key={index}>
@@ -243,18 +243,18 @@ const About = () => {
 
             {/* experience */}
             <TabsContent value="experience" className="w-full">
-              <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-[30px] text-center">
+                <div className="flex flex-col gap-2 xl:text-left  ">
                   <h3 className="h3">{experience.title}</h3>
                   <p className="p">{experience.description}</p>
                 </div>
                 <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-[30px] md:text-left">
                     {experience.items.map((item, index) => {
                       return (
                         <li
                           key={index}
-                          className="bg-secondary h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start"
+                          className="bg-secondary h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center md:items-start"
                         >
                           <span className="text-accent">{item.duration}</span>
                           <h3 className="max-w-[260px] min-h-[60px] flex items-center justify-center">
@@ -275,18 +275,18 @@ const About = () => {
 
             {/* education */}
             <TabsContent value="education" className="w-full">
-              <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-[30px] text-center">
+                <div className="flex flex-col gap-2 xl:text-left">
                   <h3 className="h3">{education.title}</h3>
                   <p className="p">{education.description}</p>
                 </div>
                 <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-[30px] md:text-left">
                     {education.items.map((item, index) => {
                       return (
                         <li
                           key={index}
-                          className="bg-secondary h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start"
+                          className="bg-secondary h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center md:items-start"
                         >
                           <span className="text-accent">{item.duration}</span>
                           <h3 className="max-w-[260px] min-h-[60px] flex items-center justify-center">

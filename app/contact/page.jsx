@@ -128,7 +128,7 @@ const Contact = () => {
                       </div>
                       <div className="flex-1">
                         <p className="uppercase text-accent">{item.title}</p>
-                        <h3 className="text-base uppercase text-white/60">
+                        <h3 className="text-base tracking-tight text-white/60">
                           {item.description}
                         </h3>
                       </div>
@@ -161,7 +161,11 @@ const Contact = () => {
                 placeholder="Type your message here!"
                 required
               />
-              <Button type="submit" className="max-w-40 uppercase">
+              <Button
+                type="submit"
+                variant="outline"
+                className="max-w-40 uppercase"
+              >
                 Send email
               </Button>
             </form>
