@@ -214,38 +214,40 @@ const About = () => {
                   <h3 className="h3">{skills.title}</h3>
                   <p className="p">{skills.description}</p>
                 </div>
-                <ul className="grid grid-cols-2 md:grid-cols-4 gap-4 xl:gap-[30px]">
-                  {skills.skillList.map((skill, index) => {
-                    return (
-                      <li key={index}>
-                        <TooltipProvider delayDuration={100}>
-                          <Tooltip>
-                            <TooltipTrigger className="w-full h-[150px] bg-secondary rounded-xl flex flex-col justify-center items-center group">
-                              <div className="text-5xl group-hover:text-accent transition-all duration-300">
-                                {skill.icon}
-                              </div>
-                              {/* Display the skill name directly on smaller screens */}
-                              <p className="text-sm mt-2 xl:hidden group-hover:text-accent transition-all duration-300">
-                                {skill.name}
-                              </p>
-                            </TooltipTrigger>
-                            {/* Tooltip content only visible on xl screens and larger */}
-                            <TooltipContent className="hidden xl:block">
-                              <p>{skill.name}</p>
-                            </TooltipContent>
-                          </Tooltip>
-                        </TooltipProvider>
-                      </li>
-                    );
-                  })}
-                </ul>
+                <ScrollArea className="h-[400px]">
+                  <ul className="grid grid-cols-2 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                    {skills.skillList.map((skill, index) => {
+                      return (
+                        <li key={index}>
+                          <TooltipProvider delayDuration={100}>
+                            <Tooltip>
+                              <TooltipTrigger className="w-full h-[150px] bg-secondary rounded-xl flex flex-col justify-center items-center group">
+                                <div className="text-5xl group-hover:text-accent transition-all duration-300">
+                                  {skill.icon}
+                                </div>
+                                {/* Display the skill name directly on smaller screens */}
+                                <p className="text-sm mt-2 xl:hidden group-hover:text-accent transition-all duration-300">
+                                  {skill.name}
+                                </p>
+                              </TooltipTrigger>
+                              {/* Tooltip content only visible on xl screens and larger */}
+                              <TooltipContent className="hidden xl:block">
+                                <p>{skill.name}</p>
+                              </TooltipContent>
+                            </Tooltip>
+                          </TooltipProvider>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </ScrollArea>
               </div>
             </TabsContent>
 
             {/* experience */}
             <TabsContent value="experience" className="w-full">
-              <div className="flex flex-col gap-[30px] text-center">
-                <div className="flex flex-col gap-2 xl:text-left  ">
+              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                <div className="flex flex-col gap-2">
                   <h3 className="h3">{experience.title}</h3>
                   <p className="p">{experience.description}</p>
                 </div>
@@ -276,8 +278,8 @@ const About = () => {
 
             {/* education */}
             <TabsContent value="education" className="w-full">
-              <div className="flex flex-col gap-[30px] text-center">
-                <div className="flex flex-col gap-2 xl:text-left">
+              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                <div className="flex flex-col gap-2">
                   <h3 className="h3">{education.title}</h3>
                   <p className="p">{education.description}</p>
                 </div>
