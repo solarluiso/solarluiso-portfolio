@@ -166,9 +166,10 @@ const About = () => {
       <div className="container mx-auto">
         <Tabs
           defaultValue="about"
-          className="flex flex-col xl:flex-row gap-[60px] xl:px-[30px] xl:h-[582px]"
+          className="flex flex-col xl:flex-row gap-[60px] xl:px-[30px] xl:h-[582px] h-[78vh] overflow-hidden"
         >
-          <TabsList className="flex flex-col w-full max-w-[360px] mx-auto xl:mx-0 gap-6">
+          {/* list */}
+          <TabsList className="flex flex-row md:flex-col w-full max-w-[360px] mx-auto xl:mx-0 gap-6 overflow-x-auto whitespace-nowrap">
             <TabsTrigger value="about">About</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
             <TabsTrigger value="experience">Experience</TabsTrigger>
