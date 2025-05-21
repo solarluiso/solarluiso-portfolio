@@ -9,6 +9,21 @@ import { motion } from "framer-motion";
 const projects = [
   {
     num: "01",
+    category: "Work in Progress",
+    title: "Illuso Radio",
+    description: "It's more than radio—it's your daily rhythm.",
+    stack: [
+      { name: "Next.js" },
+      { name: "Firebase" },
+      { name: "TailwindCSS" },
+      { name: "Framer-Motion" },
+    ],
+    image: "/assets/projects/thumb4.png",
+    live: "",
+    github: "",
+  },
+  {
+    num: "02",
     category: "fullstack",
     title: "AiQ",
     description:
@@ -19,7 +34,7 @@ const projects = [
     github: "https://github.com/chingu-voyages/V54-tier2-team-24",
   },
   {
-    num: "02",
+    num: "03",
     category: "fullstack",
     title: "Product Store App",
     description: "A dynamic full-stack product management application.",
@@ -29,7 +44,7 @@ const projects = [
     github: "https://github.com/solarluiso/product-store-app",
   },
   {
-    num: "03",
+    num: "04",
     category: "fullstack",
     title: "Mood Mapper",
     description:
@@ -40,7 +55,7 @@ const projects = [
     github: "https://github.com/solarluiso/mood-tracker",
   },
   {
-    num: "04",
+    num: "05",
     category: "frontend",
     title: "E-commerce Store",
     description:
@@ -50,34 +65,20 @@ const projects = [
     live: "https://ecommerce-ten-alpha-35.vercel.app/",
     github: "https://github.com/solarluiso/ecommerce",
   },
-  {
-    num: "05",
-    category: "frontend",
-    title: "Focus",
-    description: "A sleek website designed to enhance productivity and focus.",
-    stack: [
-      { name: "Next.js" },
-      { name: "TailwindCSS" },
-      { name: "Framer-Motion" },
-    ],
-    image: "/assets/projects/thumb4.png",
-    live: "https://focus-inky.vercel.app/",
-    github: "https://github.com/solarluiso/focus",
-  },
-  {
-    num: "06",
-    category: "frontend",
-    title: "Fit Physique",
-    description: "A fitness-focused platform to track workouts and progress.",
-    stack: [
-      { name: "Next.js" },
-      { name: "TypeScript" },
-      { name: "TailwindCSS" },
-    ],
-    image: "/assets/projects/thumb5.png",
-    live: "https://fitphysique-pi.vercel.app/",
-    github: "https://github.com/solarluiso/fitphysique",
-  },
+  // {
+  //   num: "06",
+  //   category: "frontend",
+  //   title: "Fit Physique",
+  //   description: "A fitness-focused platform to track workouts and progress.",
+  //   stack: [
+  //     { name: "Next.js" },
+  //     { name: "TypeScript" },
+  //     { name: "TailwindCSS" },
+  //   ],
+  //   image: "/assets/projects/thumb5.png",
+  //   live: "https://fitphysique-pi.vercel.app/",
+  //   github: "https://github.com/solarluiso/fitphysique",
+  // },
 ];
 
 const Projects = () => {
