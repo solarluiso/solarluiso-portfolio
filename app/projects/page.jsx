@@ -7,21 +7,21 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const projects = [
-  {
-    num: "01",
-    category: "Work in Progress",
-    title: "Illuso Radio",
-    description: "It's more than radio—it's your daily rhythm.",
-    stack: [
-      { name: "Next.js" },
-      { name: "Firebase" },
-      { name: "TailwindCSS" },
-      { name: "Framer-Motion" },
-    ],
-    image: "/assets/projects/thumb4.png",
-    live: "",
-    github: "",
-  },
+  // {
+  //   num: "01",
+  //   category: "Work in Progress",
+  //   title: "Illuso Radio",
+  //   description: "It's more than radio—it's your daily rhythm.",
+  //   stack: [
+  //     { name: "Next.js" },
+  //     { name: "Firebase" },
+  //     { name: "TailwindCSS" },
+  //     { name: "Framer-Motion" },
+  //   ],
+  //   image: "/assets/projects/thumb4.png",
+  //   live: "",
+  //   github: "",
+  // },
   {
     num: "02",
     category: "fullstack",
