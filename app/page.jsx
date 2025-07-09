@@ -49,8 +49,9 @@ const Home = () => {
               className="p text-white/80"
             >
               <p>
-                A dedicated developer who shapes ideas into interactive web
-                experiences, while sipping coffee on a glorious day.
+                A dedicated full stack developer delivering impactful web
+                applications that bring real value — fueled by coffee and
+                curiosity.
               </p>
             </motion.div>
             {/* take action */}

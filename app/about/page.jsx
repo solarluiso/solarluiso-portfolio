@@ -164,7 +164,7 @@ const About = () => {
       <div className="container mx-auto">
         <Tabs
           defaultValue="about"
-          className="flex flex-col xl:flex-row gap-[60px] xl:px-[30px] xl:h-[582px] overflow-hidden"
+          className="flex flex-col xl:flex-row gap-[60px] xl:px-[30px] h-[80vh] xl:h-[582px] overflow-hidden"
         >
           {/* list */}
           <TabsList className="flex flex-row md:flex-col w-full max-w-[360px] mx-auto xl:mx-0 gap-6 overflow-x-auto whitespace-nowrap">
