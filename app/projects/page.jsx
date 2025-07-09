@@ -90,7 +90,7 @@ const Projects = () => {
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-6"
     >
       <div className="container mx-auto">
-        <h3 className="h3 mb-8 text-accent text-center">My Projects</h3>
+        <h3 className="h3 mb-8 text-accent text-center">Selected work</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
           {projects.map((project, index) => (
             <div
