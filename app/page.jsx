@@ -50,8 +50,7 @@ const Home = () => {
             >
               <p>
                 A dedicated full stack developer delivering impactful web
-                applications that bring real value — fueled by coffee and
-                curiosity.
+                applications, while sipping coffee on a glorious day.
               </p>
             </motion.div>
             {/* take action */}
